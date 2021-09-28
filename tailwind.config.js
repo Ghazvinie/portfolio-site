@@ -9,3 +9,14 @@ module.exports = {
   },
   plugins: [],
 }
+
+// tailwind.config.js
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
+}
