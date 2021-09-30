@@ -8,8 +8,7 @@ function App() {
   return (
     <div className='app'>
       <Nav/>
-      <About 
-      id='section!'/>
+      <About />
       <Skills />
       <Project/>
       <Contact/>
