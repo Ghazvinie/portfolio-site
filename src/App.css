@@ -2,3 +2,8 @@
     margin: 10px;
     border: solid;
 }
+
+nav {
+    position: sticky;
+    top: 0;
+}
