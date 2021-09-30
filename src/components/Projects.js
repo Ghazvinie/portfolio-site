@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Contact() {
+export default function Project() {
     return (
-        <div className='contact-container' name='contact'>
-            Contact
+        <div className='project-container' name='projects'>
+            Project
 
 
 

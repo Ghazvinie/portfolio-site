@@ -1,7 +1,8 @@
+import './App.css'
 import Nav from '../src/components/Nav';
 import About from '../src/components/About';
 import Skills from '../src/components/Skills';
-import Project from '../src/components/Project';
+import Project from './components/Projects';
 import Contact from '../src/components/Contact';
 
 function App() {

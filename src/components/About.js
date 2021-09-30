@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About(){
     return (
-        <>
+        <div className='about-container' name='about'>
         About
 
 
@@ -19,6 +19,6 @@ Phasellus molestie bibendum iaculis. Nulla facilisi. Class aptent taciti sociosq
 
 In erat est, suscipit at tortor sed, posuere mollis ligula. Quisque imperdiet eros at lorem pretium tristique a sit amet mauris. Sed mattis neque aliquam, posuere urna vel, imperdiet diam. Maecenas vestibulum mattis neque, quis accumsan turpis interdum vitae. Ut eget sagittis metus. Morbi ac sollicitudin tellus. Vestibulum pellentesque dolor sed enim congue, a facilisis dui vulputate. Nam feugiat eu nunc non tristique. Curabitur eget enim consectetur, varius risus vel, efficitur arcu. Etiam vitae vestibulum leo. Cras vel leo nec libero pellentesque cursus. Quisque in velit elit. 
 
-        </>
+        </div>
     )
 }

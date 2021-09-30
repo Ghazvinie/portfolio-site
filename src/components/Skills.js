@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Skills(){
     return (
-        <>
+        <div className='skills-container' name='skills'>
         Skills
 
 
@@ -18,6 +18,6 @@ Proin imperdiet at leo eget pellentesque. Praesent tempor facilisis massa a pulv
 Phasellus molestie bibendum iaculis. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed iaculis tincidunt mi, at semper arcu dapibus hendrerit. Nulla nunc quam, ornare vitae enim at, vehicula feugiat erat. Quisque eget felis quis risus maximus elementum sit amet in nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ac massa enim. Aenean justo lorem, cursus eget lacus in, facilisis congue lacus. Fusce urna est, vestibulum ac ante quis, dapibus pretium sem.
 
 In erat est, suscipit at tortor sed, posuere mollis ligula. Quisque imperdiet eros at lorem pretium tristique a sit amet mauris. Sed mattis neque aliquam, posuere urna vel, imperdiet diam. Maecenas vestibulum mattis neque, quis accumsan turpis interdum vitae. Ut eget sagittis metus. Morbi ac sollicitudin tellus. Vestibulum pellentesque dolor sed enim congue, a facilisis dui vulputate. Nam feugiat eu nunc non tristique. Curabitur eget enim consectetur, varius risus vel, efficitur arcu. Etiam vitae vestibulum leo. Cras vel leo nec libero pellentesque cursus. Quisque in velit elit. 
-        </>
+        </div>
     )
 }
