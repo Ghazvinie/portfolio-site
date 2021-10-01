@@ -4,12 +4,12 @@ import { SocialIcon } from 'react-social-icons';
 
 export default function Nav() {
     return (
-        <header className='bg-pink-100 bg-opacity-90' >
+        <header className='bg-white border-b-4 border-black' >
             <div className='container mx-auto flex justify-between'>
-                <nav className='flex'>
+                <nav className='flex mb-1'>
                     <Link
                         className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl'
-                        activeClass='underline'
+                        activeClass='underline bg-black text-white'
                         to='about'
                         spy={true}
                         smooth={true}
@@ -19,7 +19,7 @@ export default function Nav() {
                     </Link>
                     <Link
                         className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl'
-                        activeClass='underline'
+                        activeClass='underline bg-black text-white'
                         to='skills'
                         spy={true}
                         smooth={true}
@@ -29,7 +29,7 @@ export default function Nav() {
                     </Link>
                     <Link
                         className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl'
-                        activeClass='underline'
+                        activeClass='underline bg-black text-white'
                         to='projects'
                         spy={true}
                         smooth={true}
@@ -38,8 +38,8 @@ export default function Nav() {
                     >Projects
                     </Link>
                     <Link
-                        className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl'
-                        activeClass='underline'
+                        className='nav-item inline-flex items-center py-3 px-3 mr-1 cursor-pointer font-medium text-4xl'
+                        activeClass='underline bg-black text-white'
                         to='contact'
                         spy={true}
                         smooth={true}
@@ -47,34 +47,39 @@ export default function Nav() {
                         duration={500}
                     >Contact
                     </Link>
-                    {/* <li className='nav-item inline-flex items-end py-1 ml-80 mr-20 cursor-pointer font-medium text-xs '>
-                        <Link
-                            activeClass='underline'
-                            to='bonus'
-                            spy={true}
-                            smooth={true}
-                            offset={-50}
-                            duration={500}
-                        >Bonus Photos
-                        </Link></li> */}
+
 
 
                 </nav>
-                <div >
+                <div className='ml-auto flex-column'>
+                    <div className='flex'>
                     <SocialIcon
                         url='https://github.com/Ghazvinie'
                         bgColor='black'
-                        className='mr-4 mt-7'
+                        className='mr-1 ml-1 mt-3'
                         target='_blank'
                         style={{ height: 30, width: 30 }} />
                     <SocialIcon
                         url='https://www.linkedin.com/in/daniel-ghazvinie-53a304188/'
                         bgColor='black'
                         target='_blank'
-                        className='mr-4 mt-7'
+                        className='mr-1 ml-1 mt-3'
                         style={{ height: 30, width: 30 }} />
+                    </div>
+                    <Link
+                        className='cursor-pointer font-medium text-xs inline-flex text-center text-white hover:text-black'
+                        activeClass='underline'
+                        to='bonus'
+                        spy={true}
+                        smooth={true}
+                        offset={-50}
+                        duration={500}
+                    >Bonus Photos
+                    </Link>
                 </div>
+
             </div>
+
 
         </header>
     );
