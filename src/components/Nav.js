@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 
 export default function Nav() {
     return (
-        <header className='bg-white border-b-4 border-black' >
+        <header className='bg-white p-2 border-b-4 border-black' >
             <div className='container mx-auto flex justify-between'>
                 <nav className='flex mb-1'>
                     <Link
@@ -13,7 +13,7 @@ export default function Nav() {
                         to='about'
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={-100}
                         duration={500}
                     >About
                     </Link>
@@ -56,14 +56,14 @@ export default function Nav() {
                     <SocialIcon
                         url='https://github.com/Ghazvinie'
                         bgColor='black'
-                        className='mr-1 ml-1 mt-3'
+                        className='mr-1 ml-1 mt-4'
                         target='_blank'
                         style={{ height: 30, width: 30 }} />
                     <SocialIcon
                         url='https://www.linkedin.com/in/daniel-ghazvinie-53a304188/'
                         bgColor='black'
                         target='_blank'
-                        className='mr-1 ml-1 mt-3'
+                        className='mr-1 ml-1 mt-4'
                         style={{ height: 30, width: 30 }} />
                     </div>
                     <Link

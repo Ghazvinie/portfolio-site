@@ -1,23 +1,168 @@
 import React from 'react';
+import {
+    SiHtml5,
+    SiCss3,
+    SiTailwindcss,
+    SiNodeDotJs,
+    SiMongodb,
+    SiJavascript,
+    SiGithub,
+    SiReact,
+    SiNpm,
+    SiYarn,
+    SiRedux,
+    SiGnubash,
+    SiTypescript,
+    SiPostgresql,
+    SiPostman,
+} from 'react-icons/si'
+import skills from '../data/skills';
 
-export default function Skills(){
+export default function Skills() {
+
     return (
-        <div className='skills-container' name='skills'>
-        Skills
+        <div
+            className='border-black border-t-4 flex my-2 mx-2 p-2'
+            name='about'>
+            <h1 className='text-4xl mr-10 font-semibold'>Skills</h1>
+            <div className='flex justify-center w-100'>
+                {skills.map(skill => {
+                    const keys = Object.keys(skill)
+                    console.log(keys)
+                    return (
+                        <div className={`${keys} flex flex-row items-center`}>
+                            {keys.map(key => {
+                                const Icon = skill[key].icon
+                                return (
+                                    <div className='flex flex-rcol items-center m-4'>
+                                    <Icon style={{ height: 60, width: 60 }}/>
+                                     <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                                         {skill[key].name}
+                                     </p>
+                                 </div>
+                                )
+                            }
+
+
+                            )}
+                        </div>
+                    )
+                    // return (
+
+                    //      {keys.map(skillName => (
+
+                    //                 <div className='flex flex-row items-center m-4'>
+                    //                     <SiPostman style={{ height: 60, width: 60 }} />
+                    //                     <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                    //                         {skill[skillName].name}
+                    //                     </p>
+                    //                 </div>
+
+
+                    //         ))
+                    //         }
+                    // )
+
+
+                })}
+
+                {/* <div className='flex flex'>
+                    <div className='flex flex-col items-center m-5'>
+                        <SiHtml5 style={{ height: 60, width: 60 }} />
+                        <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                            HTML5
+                        </p>
+                    </div>
+                </div>
+
+                <div className='front-end flex '>
+                    <div className='flex flex-col items-center m-5'>
+                        <SiHtml5 style={{ height: 60, width: 60 }} />
+                        <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                            HTML5
+                        </p>
+                    </div>
+                    <div className='flex flex-col items-center m-5'>
+                        <SiHtml5 style={{ height: 60, width: 60 }} />
+                        <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                            HTML5
+                        </p>
+                    </div>
+                    <div className='flex flex-col items-center m-5'>
+                        <SiHtml5 style={{ height: 60, width: 60 }} />
+                        <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                            HTML5
+                        </p>
+                    </div>
+                    <div className='flex flex-col items-center m-5'>
+                        <SiHtml5 style={{ height: 60, width: 60 }} />
+                        <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                            HTML5
+                        </p>
+                    </div>
+                </div> */}
+
+
+                {/*
+                                <div className='flex flex-col items-center m-5'>
+                                    <SiCss3 style={{ height: 60, width: 60 }} />
+                                    <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                                        CSS3
+                                    </p>
+                                </div>
+                                <div className='flex flex-col items-center m-5'>
+                                    <SiCss3 style={{ height: 60, width: 60 }} />
+                                    <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                                        CSS3
+                                    </p>
+                                </div>
+                                <div className='flex flex-col items-center m-5'>
+                                    <SiCss3 style={{ height: 60, width: 60 }} />
+                                    <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                                        CSS3
+                                    </p>
+                                </div>
+                                <div className='flex flex-col items-center m-5'>
+                                    <SiCss3 style={{ height: 60, width: 60 }} />
+                                    <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                                        CSS3
+                                    </p>
+                                </div>
+                                <div className='flex flex-col items-center m-5'>
+                                    <SiCss3 style={{ height: 60, width: 60 }} />
+                                    <p className='mt-4 font-semibold border-b-2 border-black text-xl b-black p-1'>
+                                        CSS3
+                                    </p>
+                                </div>
+
+
+
+                            </div> */}
+                {/* <div>
+                    <SiMongodb style={{ height: 60, width: 60 }} />
+                    <SiJavascript style={{ height: 60, width: 60 }} />
+                    <SiNodeDotJs style={{ height: 60, width: 60 }} />
+                </div>
+                <div>
+                    <SiGithub style={{ height: 60, width: 60 }} />
+                    <SiNpm style={{ height: 60, width: 60 }} />
+                    <SiYarn style={{ height: 60, width: 60 }} />
+                    <SiGnubash style={{ height: 60, width: 60 }} />
+                    <SiPostman style={{ height: 60, width: 60 }} />
+                </div>
+
+                <div>
+                    <SiTypescript style={{ height: 60, width: 60 }} />
+                    <SiPostgresql style={{ height: 60, width: 60 }} />
+                </div> */}
 
 
 
 
+                {/* <MdHttp /> */}
+                {/* </div> */}
+            </div>
+        </div >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam risus, lobortis in gravida nec, lacinia ut justo. Sed dictum cursus imperdiet. Phasellus hendrerit ultricies hendrerit. Aliquam sagittis rutrum mauris, eu lobortis sapien pretium a. Nulla vitae magna faucibus, cursus lectus pulvinar, aliquet felis. Proin fringilla dui eu ante mollis imperdiet. Nullam finibus augue eget tortor vulputate suscipit. Vivamus eget vestibulum sem, vitae facilisis mi.
-
-Integer viverra condimentum nibh, quis scelerisque augue imperdiet ut. Sed a augue sit amet dui hendrerit rhoncus. Praesent sodales elit id magna tempus interdum. Phasellus est neque, sodales laoreet nunc in, malesuada interdum mi. Ut dictum turpis ac diam semper, eget finibus ipsum pellentesque. Donec imperdiet lorem quis erat aliquet sollicitudin eget non purus. Sed pellentesque est sed nisl pellentesque efficitur. Maecenas quis nunc tempor, pulvinar ligula id, ultricies lectus.
-
-Proin imperdiet at leo eget pellentesque. Praesent tempor facilisis massa a pulvinar. Quisque nec purus maximus, accumsan lorem et, ullamcorper ligula. Donec purus est, aliquet ac convallis vel, hendrerit dapibus erat. Donec felis risus, posuere in elementum id, faucibus non orci. Morbi aliquam nunc non magna luctus eleifend. Ut dignissim facilisis rutrum. Suspendisse sodales magna ac congue sodales. Mauris fringilla ac lectus laoreet malesuada. Proin sed turpis id arcu porta posuere a eget orci. Cras id erat felis. Duis dictum volutpat rutrum. Vivamus enim metus, gravida eget felis eget, posuere varius mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc dapibus consectetur aliquam.
-
-Phasellus molestie bibendum iaculis. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed iaculis tincidunt mi, at semper arcu dapibus hendrerit. Nulla nunc quam, ornare vitae enim at, vehicula feugiat erat. Quisque eget felis quis risus maximus elementum sit amet in nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ac massa enim. Aenean justo lorem, cursus eget lacus in, facilisis congue lacus. Fusce urna est, vestibulum ac ante quis, dapibus pretium sem.
-
-In erat est, suscipit at tortor sed, posuere mollis ligula. Quisque imperdiet eros at lorem pretium tristique a sit amet mauris. Sed mattis neque aliquam, posuere urna vel, imperdiet diam. Maecenas vestibulum mattis neque, quis accumsan turpis interdum vitae. Ut eget sagittis metus. Morbi ac sollicitudin tellus. Vestibulum pellentesque dolor sed enim congue, a facilisis dui vulputate. Nam feugiat eu nunc non tristique. Curabitur eget enim consectetur, varius risus vel, efficitur arcu. Etiam vitae vestibulum leo. Cras vel leo nec libero pellentesque cursus. Quisque in velit elit. 
-        </div>
     )
 }

@@ -22,8 +22,7 @@ export default function Welcome() {
     }, [text]);
     return (
         <div
-            className='welcome-container flex p-2 h-screen'
-            name='about'>
+            className='welcome-container flex p-2 h-screen'>
             <div className='text-6xl m-auto'>
                 {text}
             </div>
