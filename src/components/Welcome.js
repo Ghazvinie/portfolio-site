@@ -9,7 +9,7 @@ export default function Welcome() {
     useEffect(() => {
         let timer;
         if (index <= textArray.length - 1) {
-          timer =  setTimeout(() => {
+            timer = setTimeout(() => {
                 setText(textArray[index])
             }, 1000)
 
@@ -26,8 +26,7 @@ export default function Welcome() {
             name='about'>
             <div className='text-6xl m-auto'>
                 {text}
-                <br/>
             </div>
         </div>
-    )
+    );
 }
