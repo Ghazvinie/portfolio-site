@@ -1,5 +1,6 @@
 import './App.css'
 import Nav from '../src/components/Nav';
+import Welcome from './components/Welcome';
 import About from '../src/components/About';
 import Skills from '../src/components/Skills';
 import Project from './components/Projects';
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className='app'>
       <Nav/>
+      <Welcome/>
       <About />
       <Skills />
       <Project/>

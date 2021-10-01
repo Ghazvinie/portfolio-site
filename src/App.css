@@ -1,4 +1,4 @@
-.about-container, .contact-container, .project-container, .skills-container {
+.contact-container, .project-container, .skills-container {
     margin: 10px;
     border: solid;
 }
