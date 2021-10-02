@@ -5,8 +5,8 @@ import { SocialIcon } from 'react-social-icons';
 export default function Nav() {
     return (
         <header className='bg-white p-2 border-b-4 border-black' >
-            <div className='container mx-auto flex justify-between'>
-                <nav className='flex mb-1'>
+            <div className='container mx-auto flex flex-wrap justify-between'>
+                <nav className='flex flex-wrap mb-1'>
                     <Link
                         className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl'
                         activeClass='underline bg-black text-white'
