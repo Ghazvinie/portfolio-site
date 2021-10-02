@@ -75,20 +75,21 @@ const skills = [{
         name: 'Yarn',
         icon: SiYarn,
     },
-    bash: {
-        name: 'Bash',
-        icon: SiGnubash,
+    postman: {
+        name: 'Postman',
+        icon: SiPostman,
     }
-
 },
 {
+
     typescript: {
         name: 'TypeScript',
         icon: SiTypescript,
     },
-    postman: {
-        name: 'Postman',
-        icon: SiPostman,
+
+    bash: {
+        name: 'Bash',
+        icon: SiGnubash,
     },
     postgresql: {
         name: 'PostgreSQL',

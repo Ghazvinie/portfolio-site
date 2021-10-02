@@ -11,7 +11,7 @@ export default function Welcome() {
         if (index <= textArray.length - 1) {
             timer = setTimeout(() => {
                 setText(textArray[index])
-            }, 1000)
+            }, 500)
 
             setIndex((prevIndex) => prevIndex + 1)
         };
