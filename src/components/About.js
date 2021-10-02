@@ -4,11 +4,11 @@ export default function About() {
 
     return (
         <div
-            className='border-black border-t-4 flex flex-wrap my-2 mx-2 p-2 '
+            className='border-black border-t-4 flex justify-center flex-col flex-wrap my-2 mx-2 p-2 '
             name='about'
         >
-            <h1 className='text-4xl mr-10  font-semibold'>About</h1>
-            <div className='text-3xl leading-loose'>
+            <h1 className='text-4xl font-semibold'>About</h1>
+            <div className='text-3xl leading-loose ml-32 justify-center'>
                 Hello again.
                 <br />
                 I am a bespoke tailor turned passionate developer.

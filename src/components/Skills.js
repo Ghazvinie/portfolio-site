@@ -11,8 +11,8 @@ export default function Skills() {
                     : keys.includes('bash') ? 'WIP' : '';
 
         return (
-            <div className='flex flex-row  items-center justify-center m-4' >
-                <p className='mr-4 flex text-2xl font-semibold'>
+            <div className='flex flex-row items-center justify-center my-5' >
+                <p className='mr-4 flex  text-2xl font-semibold'>
                     {categoryName}:
                 </p>
                 <div className='flex flex-row flex-wrap justify-center items-center'>
@@ -35,9 +35,9 @@ export default function Skills() {
 
     return (
         <div
-            className='border-black border-t-4 flex flex-wrap my-2 mx-2 p-2' name='skills'>
+            className='border-black border-t-4 flex flex-col flex-wrap justify-center my-2 mx-2 p-2' name='skills'>
             <h1 className='text-4xl mr-10 font-semibold' >Skills</h1>
-            <div className='flex flex-col flex-wrap justify-center mx-auto items-center'>
+            <div className='flex flex-col flex-wrap justify-center justify-between items-center '>
                 {skillsDisplay}
             </div>
         </div >
