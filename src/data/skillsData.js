@@ -14,8 +14,11 @@ import {
     SiTypescript,
     SiPostgresql,
     SiPostman,
+    SiGraphql,
+    SiGit
 } from 'react-icons/si';
-import {ReactComponent as expressjsIcon} from '../assets/expressjs.svg'
+import { ReactComponent as expressjsIcon } from '../assets/expressjs.svg'
+import { ReactComponent as restIcon } from '../assets/api.svg'
 
 
 const skills = [{
@@ -61,10 +64,17 @@ const skills = [{
     mongodb: {
         name: 'MongoDB',
         icon: SiMongodb,
+    },
+    restApi: {
+        name: 'Rest APIs',
+        icon: restIcon
     }
-
-}, {
-
+}, 
+{
+    git : {
+        name: 'Git',
+        icon: SiGit
+    },
     github: {
         name: 'GitHub',
         icon: SiGithub,
@@ -96,6 +106,10 @@ const skills = [{
     postgresql: {
         name: 'PostgreSQL',
         icon: SiPostgresql
+    },
+    graphql: {
+        name: 'GraphQL',
+        icon: SiGraphql
     }
 
 }

@@ -35,9 +35,9 @@ export default function Skills() {
 
     return (
         <div
-            className='border-black border-t-4 flex flex-wrap my-2 mx-2 p-2'
+            className='border-black border-t-4 flex flex-wrap my-2 mx-2 p-2' name='skills'
         >
-            <h1 className='text-4xl mr-10 font-semibold' name='skills'>Skills</h1>
+            <h1 className='text-4xl mr-10 font-semibold' >Skills</h1>
             <div className='flex flex-col justify-center mx-auto items-center'>
                 {skillsDisplay}
             </div>
