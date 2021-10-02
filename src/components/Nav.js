@@ -13,7 +13,7 @@ export default function Nav() {
                         to='about'
                         spy={true}
                         smooth={true}
-                        offset={-100}
+                        offset={-94}
                         duration={500}
                     >About
                     </Link>
@@ -23,7 +23,7 @@ export default function Nav() {
                         to='skills'
                         spy={true}
                         smooth={true}
-                        offset={-100}
+                        offset={-94}
                         duration={500}
                     >Skills
                     </Link>

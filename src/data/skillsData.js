@@ -14,7 +14,9 @@ import {
     SiTypescript,
     SiPostgresql,
     SiPostman,
-} from 'react-icons/si'
+} from 'react-icons/si';
+import {ReactComponent as expressjsIcon} from '../assets/expressjs.svg'
+
 
 const skills = [{
     html5: {
@@ -50,7 +52,7 @@ const skills = [{
     },
     express: {
         name: 'ExpressJs',
-        icon: SiJavascript,
+        icon: expressjsIcon,
     },
     javascript: {
         name: 'JavaScript',
