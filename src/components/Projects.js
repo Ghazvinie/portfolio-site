@@ -2,6 +2,7 @@ import React from 'react';
 import projects from '../data/projects';
 import { FaGithubSquare } from 'react-icons/fa';
 import { BiLinkExternal } from 'react-icons/bi';
+import mainLogo from '../assets/player.png'
 
 export default function Projects() {
     return (
@@ -13,12 +14,12 @@ export default function Projects() {
             <div className='flex flex-row flex-wrap items-center justify-center mx-auto'>
                 {
                     projects.map(project => (
-                        <div className='flex flex-col m-4 justify-center items-center'>
-                            <img />
-                            <h1 className='flex text-2xl font-semibold m-2'>
+                        <div className='flex flex-col max-w-2xl flex-wrap m-4 justify-center items-center'>
+                            <img src={project.img} />
+                            <h1 className='flex font-semibold m-2 text-center break-word'>
                                 {project.title}
                             </h1>
-                            <p className='flex break-all text-medium font-light m-2'>
+                            <p className='flex break-word text-medium font-light m-2 text-center'>
                                 {project.description}
                             </p>
                             <div className='flex flex-row m-2'>
