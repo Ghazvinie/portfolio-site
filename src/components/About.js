@@ -4,7 +4,7 @@ export default function About() {
 
     return (
         <div
-            className='border-black border-t-4 flex flex-wrap my-2 mx-2 p-2'
+            className='border-black border-t-4 flex flex-wrap my-2 mx-2 p-2 '
             name='about'
         >
             <h1 className='text-4xl mr-10  font-semibold'>About</h1>

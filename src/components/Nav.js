@@ -33,7 +33,7 @@ export default function Nav() {
                         to='projects'
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={-94}
                         duration={500}
                     >Projects
                     </Link>
