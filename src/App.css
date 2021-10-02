@@ -1,8 +1,3 @@
-.about-container, .contact-container, .project-container, .skills-container {
-    /* margin: 10px;
-    border: solid; */
-}
-
 header {
     position: sticky;
     top: 0;
