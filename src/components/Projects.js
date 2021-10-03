@@ -2,27 +2,28 @@ import React from 'react';
 import projects from '../data/projects';
 import { FaGithubSquare } from 'react-icons/fa';
 import { BiLinkExternal } from 'react-icons/bi';
-import mainLogo from '../assets/player.png'
 
 export default function Projects() {
     return (
         <div
-            className='border-black border-t-4 flex my-2 mx-2 p-2'
+            className='border-black border-t-4 my-2 mx-2 p-2'
             name='projects'
         >
             <h1 className='text-4xl font-semibold'>Projects</h1>
-            <div className='flex flex-row flex-wrap items-center justify-center mx-auto'>
+
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-center gap-8 ml-32'>
+
                 {
                     projects.map(project => (
-                        <div className='flex flex-col max-w-2xl flex-wrap m-4 justify-center items-center'>
-                            <img src={project.img} />
-                            <h1 className='flex font-semibold m-2 text-center break-word'>
+                        <div className='overflow-hidden flex flex-col justify-between content-between items-center'>
+                            <img src={project.img} className='w-full h-48 object-scale-down text-center' alt={project.title} />
+                            <h1 className='text-center text-primary break-word my-5'>
                                 {project.title}
                             </h1>
-                            <p className='flex break-word text-medium font-light m-2 text-center'>
+                            <p className='break-word text-center text-medium font-light m-2 text-center'>
                                 {project.description}
                             </p>
-                            <div className='flex flex-row m-2'>
+                            <div className='flex items-center justify-center flex-row m-2'>
                                 <a
                                     href={`${project.github}`}
                                     rel='noreferrer'
@@ -45,10 +46,9 @@ export default function Projects() {
                             </div>
 
                         </div>
-                    ))
-                }
-
+                    ))}
             </div>
         </div>
     );
 }
+

@@ -2,10 +2,11 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    height: {
-      xl: '90vh',
+    extend: {
+      gridTemplateColumns : {
+        'dan' : 'repeat(auto-fit, minmax(12rem, 46rem))'
+      },
     },
-    extend: {},
   },
   variants: {
     extend: {},

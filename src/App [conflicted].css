@@ -1,0 +1,9 @@
+header {
+    position: sticky;
+    top: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 20rem));
+}
