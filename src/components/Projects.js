@@ -6,18 +6,18 @@ import { BiLinkExternal } from 'react-icons/bi';
 export default function Projects() {
     return (
         <div
-            className='border-black border-t-4 my-2 mx-2 p-2'
+            className='flex flex-col border-black border-t-4 my-2 mx-2 p-2 '
             name='projects'
         >
             <h1 className='text-4xl font-semibold'>Projects</h1>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-center gap-8 ml-32'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-32 '>
 
                 {
                     projects.map(project => (
                         <div className='overflow-hidden flex flex-col justify-between content-between items-center'>
                             <img src={project.img} className='w-full h-48 object-scale-down text-center' alt={project.title} />
-                            <h1 className='text-center text-primary break-word my-5'>
+                            <h1 className='text-center text-lg font-bold break-word mb-3 mt-4'>
                                 {project.title}
                             </h1>
                             <p className='break-word text-center text-medium font-light m-2 text-center'>
