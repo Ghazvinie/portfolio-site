@@ -8,7 +8,7 @@ export default function About() {
             name='about'
         >
             <h1 className='text-4xl font-semibold'>About</h1>
-            <div className='text-3xl leading-loose ml-32 justify-center'>
+            <div className='text-3xl leading-loose ml-36 justify-center'>
                 Hello again.
                 <br />
                 I am a bespoke tailor turned passionate developer.

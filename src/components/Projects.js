@@ -11,11 +11,11 @@ export default function Projects() {
         >
             <h1 className='text-4xl font-semibold'>Projects</h1>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-32 '>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-36 justify-items-center items-center'>
 
                 {
                     projects.map(project => (
-                        <div className='overflow-hidden flex flex-col justify-between content-between items-center'>
+                        <div className='flex flex-col ml-2'>
                             <img src={project.img} className='w-full h-48 object-scale-down text-center' alt={project.title} />
                             <h1 className='text-center text-lg font-bold break-word mb-3 mt-4'>
                                 {project.title}
