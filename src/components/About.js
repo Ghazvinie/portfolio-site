@@ -1,4 +1,5 @@
 import React from 'react';
+import FlashingArrows from './FlashingArrows';
 
 export default function About() {
 
@@ -20,6 +21,7 @@ export default function About() {
                 Please scroll down to view my skills and some of my projects...
                 <br /> <br /> 
                
+                <FlashingArrows />
             </div>
             <p className='ml-36 text-base font-extralight'>(Yes, the website is black and white)</p>
         </div>
