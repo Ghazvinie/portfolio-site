@@ -9,8 +9,8 @@ export default function About() {
             name='about'
         >
             <h1 className='text-4xl font-semibold'>About</h1>
-            <div className=' ml-36 justify-center md:h-screen'>
-                <div className='text-3xl leading-loose text-start mb-10'>
+            <div className='ml-18 md:ml-36 justify-center md:h-screen'>
+                <div className='text-1xl md:text-3xl md:leading-loose leading-loose text-start mb-10 mt-4 md:mt-0'>
                     Hello again.
                     <br />
                     I am a bespoke tailor turned passionate developer.
@@ -29,7 +29,7 @@ export default function About() {
                 </div>
             </div>
 
-            <p className='ml-36 text-base font-extralight'>(Yes, the website is black and white)</p>
+            <p className='ml-18 md:ml-36 text-base font-extralight'>(Yes, the website is black and white)</p>
         </div>
     );
 }

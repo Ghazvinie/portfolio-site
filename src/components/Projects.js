@@ -11,7 +11,7 @@ export default function Projects() {
         >
             <h1 className='text-4xl font-semibold'>Projects</h1>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-36 justify-items-center items-center'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-18 md:ml-36 justify-items-center items-center'>
 
                 {
                     projects.map(project => (
