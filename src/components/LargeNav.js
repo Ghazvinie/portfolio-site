@@ -4,12 +4,14 @@ import { MdEmail } from 'react-icons/md';
 
 export default function LargeNav() {
     const offSet = -98;
+    const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl';
+    const linkActive = 'underline bg-black text-white'
     return (
         <div className='flex flex-row justify-between'>
             <nav className='flex flex-wrap mb-1'>
                 <Link
-                    className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl'
-                    activeClass='underline bg-black text-white'
+                    className={linkStyle}
+                    activeClass={linkActive}
                     to='about'
                     spy={true}
                     smooth={true}
@@ -18,8 +20,8 @@ export default function LargeNav() {
                 >About
                 </Link>
                 <Link
-                    className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl'
-                    activeClass='underline bg-black text-white'
+                    className={linkStyle}
+                    activeClass={linkActive}
                     to='skills'
                     spy={true}
                     smooth={true}
@@ -28,8 +30,8 @@ export default function LargeNav() {
                 >Skills
                 </Link>
                 <Link
-                    className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl'
-                    activeClass='underline bg-black text-white'
+                    className={linkStyle}
+                    activeClass={linkActive}
                     to='projects'
                     spy={true}
                     smooth={true}
@@ -38,8 +40,8 @@ export default function LargeNav() {
                 >Projects
                 </Link>
                 <Link
-                    className='nav-item inline-flex items-center py-3 px-3 mr-1 cursor-pointer font-medium text-4xl'
-                    activeClass='underline bg-black text-white'
+                    className={linkStyle}
+                    activeClass={linkActive}
                     to='contact'
                     spy={true}
                     smooth={true}

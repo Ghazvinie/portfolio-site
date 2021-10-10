@@ -8,7 +8,10 @@ import { CgClose } from 'react-icons/cg';
 
 export default function DropNav() {
     const [isOpen, setIsOpen] = useState(false);
-    const offSet =  - 300
+    const offSet =  - 300;
+    const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer';
+    const linkActive = 'underline bg-black text-white';
+
     return (
         <div className='flex flex-row justify-between'>
             <nav className='flex flex-col w-min'>
@@ -22,8 +25,8 @@ export default function DropNav() {
                     isOpen &&
                     <div className='flex flex-col text-md text-2xl'>
                         <Link
-                            className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer'
-                            activeClass='underline bg-black text-white'
+                            className={linkStyle}
+                            activeClass={linkActive}
                             to='about'
                             spy={true}
                             smooth={true}
@@ -32,8 +35,8 @@ export default function DropNav() {
                         >About
                         </Link>
                         <Link
-                            className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer '
-                            activeClass='underline bg-black text-white'
+                            className={linkStyle}
+                            activeClass={linkActive}
                             to='skills'
                             spy={true}
                             smooth={true}
@@ -42,8 +45,8 @@ export default function DropNav() {
                         >Skills
                         </Link>
                         <Link
-                            className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer '
-                            activeClass='underline bg-black text-white'
+                            className={linkStyle}
+                            activeClass={linkActive}
                             to='projects'
                             spy={true}
                             smooth={true}
@@ -52,8 +55,8 @@ export default function DropNav() {
                         >Projects
                         </Link>
                         <Link
-                            className='nav-item inline-flex items-center py-3 px-3 mr-1 cursor-pointer '
-                            activeClass='underline bg-black text-white'
+                            className={linkStyle}
+                            activeClass={linkActive}
                             to='contact'
                             spy={true}
                             smooth={true}
