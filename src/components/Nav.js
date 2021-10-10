@@ -4,6 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 import { MdEmail } from 'react-icons/md';
 
 export default function Nav() {
+    const offSet = window.innerWidth < 640 ? -214 : -94
     return (
         <header className='bg-white p-2 border-b-4 border-black' >
             <div className='container mx-auto flex flex-wrap justify-between'>
@@ -14,7 +15,7 @@ export default function Nav() {
                         to='about'
                         spy={true}
                         smooth={true}
-                        offset={-94}
+                        offset={offSet}
                         duration={500}
                     >About
                     </Link>
@@ -24,7 +25,7 @@ export default function Nav() {
                         to='skills'
                         spy={true}
                         smooth={true}
-                        offset={-94}
+                        offset={offSet}
                         duration={500}
                     >Skills
                     </Link>
@@ -34,7 +35,7 @@ export default function Nav() {
                         to='projects'
                         spy={true}
                         smooth={true}
-                        offset={-94}
+                        offset={offSet}
                         duration={500}
                     >Projects
                     </Link>
@@ -44,7 +45,7 @@ export default function Nav() {
                         to='contact'
                         spy={true}
                         smooth={true}
-                        offset={-94}
+                        offset={offSet}
                         duration={500}
                     >Contact
                     </Link>
