@@ -3,8 +3,9 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { SiLinkedin } from 'react-icons/si'
 
 export default function Contact() {
-    const midStyle = { width: 150, height: 150 };
-    const smStyle = { width: 75, height: 75 };
+    const iconSize = 'h-16 w-16 md:h-32 md:w-32';
+    const iconDiv = 'border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100 cursor-pointer rounded-sm pb-10 flex flex-col m-6 justify-center items-center';
+    const title = 'text-center text-2xl md:text-5xl mb-10';
 
     return (
         <div
@@ -19,15 +20,15 @@ export default function Contact() {
 
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:-mt-96 justify-center items-center'>
                     <a href="mailto:danielghazvinie@protonmail.com" rel='noreferrer' target='_blank'>
-                        <div className='border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100 cursor-pointer rounded-sm pb-10 flex flex-col m-6 justify-center items-center'>
-                            <p className='text-center text-2xl md:text-5xl mb-10'>Email</p>
-                            <AiOutlineMail style={window.innerWidth <= 640 ? smStyle : midStyle} />
+                        <div className={iconDiv}>
+                            <p className={title}>Email</p>
+                            <AiOutlineMail className={iconSize} />
                         </div>
                     </a>
                     <a href='https://www.linkedin.com/in/daniel-ghazvinie-53a304188/' rel='noreferrer' target='_blank'>
-                        <div className='border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100 cursor-pointer pb-10 flex flex-col m-6 justify-center items-center'>
-                            <p className='text-center text-2xl md:text-5xl mb-10'>LinkedIn</p>
-                            <SiLinkedin style={window.innerWidth <= 640 ? smStyle : midStyle} />
+                        <div className={iconDiv}>
+                            <p className={title}>LinkedIn</p>
+                            <SiLinkedin className={iconSize} />
                         </div>
                     </a>
                 </div>
