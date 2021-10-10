@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 import { MdEmail } from 'react-icons/md';
 
 export default function LargeNav() {
-    const offSet = -98;
+    const offSet = -94;
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl';
     const linkActive = 'underline bg-black text-white'
     return (
@@ -25,7 +25,7 @@ export default function LargeNav() {
                     to='skills'
                     spy={true}
                     smooth={true}
-                    offset={offSet}
+                    offset={-98}
                     duration={500}
                 >Skills
                 </Link>
