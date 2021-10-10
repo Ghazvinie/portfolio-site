@@ -8,7 +8,7 @@ import { CgClose } from 'react-icons/cg';
 
 export default function DropNav() {
     const [isOpen, setIsOpen] = useState(false);
-    const offSet = window.innerWidth <= 640 ? -214 : -94;
+    const offSet =  - 300
     return (
         <div className='flex flex-row justify-between'>
             <nav className='flex flex-col w-min'>
@@ -20,7 +20,7 @@ export default function DropNav() {
                 </button>
                 {
                     isOpen &&
-                    <div className='flex flex-col text-md font-medium'>
+                    <div className='flex flex-col text-md text-2xl'>
                         <Link
                             className='nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer'
                             activeClass='underline bg-black text-white'

@@ -18,14 +18,18 @@ export default function Contact() {
 
 
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:-mt-96 justify-center items-center'>
-                    <div className='border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100 cursor-pointer rounded-sm pb-10 flex flex-col m-6 justify-center items-center'>
-                        <p className='text-center text-2xl md:text-5xl mb-10'>Email</p>
-                        <AiOutlineMail style={window.innerWidth <= 640 ? smStyle : midStyle} />
-                    </div>
-                    <div className='border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100 cursor-pointer pb-10 flex flex-col m-6 justify-center items-center'>
-                        <p className='text-center text-2xl md:text-5xl mb-10'>LinkedIn</p>
-                        <SiLinkedin style={window.innerWidth <= 640 ? smStyle : midStyle} />
-                    </div>
+                    <a href="mailto:danielghazvinie@protonmail.com" rel='noreferrer' target='_blank'>
+                        <div className='border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100 cursor-pointer rounded-sm pb-10 flex flex-col m-6 justify-center items-center'>
+                            <p className='text-center text-2xl md:text-5xl mb-10'>Email</p>
+                            <AiOutlineMail style={window.innerWidth <= 640 ? smStyle : midStyle} />
+                        </div>
+                    </a>
+                    <a href='https://www.linkedin.com/in/daniel-ghazvinie-53a304188/' rel='noreferrer' target='_blank'>
+                        <div className='border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100 cursor-pointer pb-10 flex flex-col m-6 justify-center items-center'>
+                            <p className='text-center text-2xl md:text-5xl mb-10'>LinkedIn</p>
+                            <SiLinkedin style={window.innerWidth <= 640 ? smStyle : midStyle} />
+                        </div>
+                    </a>
                 </div>
             </div>
             {window.innerWidth > 640 && <p className='ml-18 md:ml-36 font-extralight'>That's it!</p>}

@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 import { MdEmail } from 'react-icons/md';
 
 export default function LargeNav() {
-    const offSet = window.innerWidth <= 640 ? -214 : -94;
+    const offSet = -98;
     return (
         <div className='flex flex-row justify-between'>
             <nav className='flex flex-wrap mb-1'>
@@ -62,7 +62,7 @@ export default function LargeNav() {
                         target='_blank'
                         className='mx-1'
                         style={{ height: 30, width: 30 }} />
-                    <a href="mailto:danielghazvinie@protonmail.com">
+                    <a href='mailto:danielghazvinie@protonmail.com'>
                         <MdEmail
                             bgColor='black'
                             target='_blank'
