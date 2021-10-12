@@ -45,7 +45,7 @@ export default function LargeNav() {
                     to='contact'
                     spy={true}
                     smooth={true}
-                    offset={offSet}
+                    offset={offSet -10}
                     duration={500}
                 >Contact
                 </Link>

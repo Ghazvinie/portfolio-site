@@ -5,7 +5,7 @@ export default function About() {
 
     return (
         <div
-            className='border-black border-t-4 flex justify-center flex-col flex-wrap my-2 mx-2 p-2'
+            className='border-black border-t-4 flex justify-center flex-col flex-wrap m-2 p-2'
             name='about'
         >
             <h1 className='text-4xl font-semibold'>About</h1>
@@ -22,8 +22,6 @@ export default function About() {
                     Please scroll down to view my projects and skills...
                     <br />
                 </div>
-
-
                 <div className='text-3xl md:text-5xl flex flex-col w-min mb-10'>
                     <FlashingArrows />
                 </div>

@@ -35,7 +35,7 @@ export default function Skills() {
 
     return (
         <div
-            className='border-black border-t-4 flex flex-col flex-wrap justify-center my-2 mx-2 p-2' name='skills' >
+            className='border-black border-t-4 flex flex-col flex-wrap justify-center my-2 p-2' name='skills'>
             <h1 className='text-4xl font-semibold' >Skills</h1>
             <div className='flex flex-col flex-wrap justify-center ml-18 md:ml-36 md:h-screen'>
                 {skillsDisplay}
