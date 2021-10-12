@@ -12,12 +12,9 @@ export default function Contact() {
             className='border-black border-t-4 flex flex-col flex-wrap my-2 mx-2 p-2 mb-20 ' name='contact'>
             <h1 className='text-4xl font-semibold'>Contact</h1>
             <p className=' ml-18 md:ml-36 text-1xl md:text-3xl md:leading-loose leading-loose md:text-center mt-4' >
-                If you would like to contact me regarding any employment opportunities, you can contact me through:
+                If you would like to contact me regarding any employment opportunities, please do so through:
             </p>
-            <div className='ml-18 md:ml-36 justify-center items-center flex flex-col md:h-screen '>
-
-
-
+            <div className='ml-18 md:ml-36 justify-center items-center flex flex-col md:h-screen'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:-mt-96 justify-center items-center'>
                     <a href="mailto:danielghazvinie@protonmail.com" rel='noreferrer' target='_blank'>
                         <div className={iconDiv}>
@@ -33,7 +30,7 @@ export default function Contact() {
                     </a>
                 </div>
             </div>
-            {window.innerWidth > 640 && <p className='ml-18 md:ml-36 font-extralight'>That's it!</p>}
+            <p className='ml-18 md:ml-36 font-extralight text-black text-opacity-0 md:text-opacity-100'>That's it!</p>
         </div >
     )
 }

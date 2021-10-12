@@ -39,41 +39,7 @@ const projects = [
         live: 'www.bbc.co.uk',
         img: 'somepic'
     },
-    {
-        title: 'Test Project',
-        description : 'Some information about the project',
-        github: 'www.google.com',
-        live: 'www.bbc.co.uk',
-        img: 'somepic'
-    },
-    {
-        title: 'Test Project',
-        description : 'Some information about the project',
-        github: 'www.google.com',
-        live: 'www.bbc.co.uk',
-        img: 'somepic'
-    },
-    {
-        title: 'Test Project',
-        description : 'Some information about the project',
-        github: 'www.google.com',
-        live: 'www.bbc.co.uk',
-        img: 'somepic'
-    },
-    {
-        title: 'Test Project',
-        description : 'Some information about the project',
-        github: 'www.google.com',
-        live: 'www.bbc.co.uk',
-        img: 'somepic'
-    },
-    {
-        title: 'Test Project',
-        description : 'Some information about the project',
-        github: 'www.google.com',
-        live: 'www.bbc.co.uk',
-        img: 'somepic'
-    },
+
 ]
 
 export default projects;

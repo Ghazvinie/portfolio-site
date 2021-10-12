@@ -6,7 +6,7 @@ import { BiLinkExternal } from 'react-icons/bi';
 export default function Projects() {
     return (
         <div
-            className='flex flex-col border-black border-t-4 my-2 mx-2 p-2 '
+            className='flex flex-col border-black border-t-4 my-2 mx-2 p-2 md:h-screen'
             name='projects'
         >
             <h1 className='text-4xl font-semibold'>Projects</h1>
