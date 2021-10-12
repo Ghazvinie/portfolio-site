@@ -37,22 +37,22 @@ export default function DropNav() {
                         <Link
                             className={linkStyle}
                             activeClass={linkActive}
-                            to='skills'
-                            spy={true}
-                            smooth={true}
-                            offset={offSet}
-                            duration={500}
-                        >Skills
-                        </Link>
-                        <Link
-                            className={linkStyle}
-                            activeClass={linkActive}
                             to='projects'
                             spy={true}
                             smooth={true}
                             offset={offSet}
                             duration={500}
                         >Projects
+                        </Link>
+                        <Link
+                            className={linkStyle}
+                            activeClass={linkActive}
+                            to='skills'
+                            spy={true}
+                            smooth={true}
+                            offset={offSet}
+                            duration={500}
+                        >Skills
                         </Link>
                         <Link
                             className={linkStyle}

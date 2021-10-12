@@ -19,7 +19,7 @@ export default function About() {
                     <br />
                     I have experience creating real world projects and working on real-world codebases.
                     <br />
-                    Please scroll down to view my skills and some of my projects...
+                    Please scroll down to view my projects and skills...
                     <br />
                 </div>
 
