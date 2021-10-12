@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md';
 export default function LargeNav() {
     const offSet = -94;
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl';
-    const linkActive = 'underline bg-black text-white'
+    const linkActive = 'underline bg-black text-white rounded-sm'
     return (
         <div className='flex flex-row justify-between'>
             <nav className='flex flex-wrap mb-1'>
@@ -35,7 +35,7 @@ export default function LargeNav() {
                     to='skills'
                     spy={true}
                     smooth={true}
-                    offset={-98}
+                    offset={-94}
                     duration={500}
                 >Skills
                 </Link>

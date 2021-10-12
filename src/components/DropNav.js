@@ -9,8 +9,8 @@ import { CgClose } from 'react-icons/cg';
 export default function DropNav() {
     const [isOpen, setIsOpen] = useState(false);
     const offSet =  - 300;
-    const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer';
-    const linkActive = 'underline bg-black text-white';
+    const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer text-justify';
+    const linkActive = 'underline bg-black text-white rounded-sm';
 
     return (
         <div className='flex flex-row justify-between'>
@@ -19,7 +19,7 @@ export default function DropNav() {
                     className='cursor-pointer'
                     onClick={() => setIsOpen(!isOpen)}
                 >
-                    {isOpen ? <CgClose style={{ width: 50, height: 50 }} className=' ' /> : <RiMenuLine style={{ width: 50, height: 50 }} className='' />}
+                    {isOpen ? <CgClose style={{ width: 50, height: 50 }} /> : <RiMenuLine style={{ width: 50, height: 50 }} className='' />}
                 </button>
                 {
                     isOpen &&
@@ -92,14 +92,14 @@ export default function DropNav() {
                 </div>
                 <div className='text-center'>
                     <Link
-                        className='cursor-pointer font-medium text-xs text-right text-white hover:text-black'
+                        className='cursor-pointer'
                         activeClass='underline'
                         to='bonus'
                         spy={true}
                         smooth={true}
                         offset={-50}
                         duration={500}
-                    >Bonus Photos
+                    ><p className='font-medium text-xs text-center text-white hover:text-black'>Bonus Photos</p>
                     </Link>
                 </div>
             </div>
