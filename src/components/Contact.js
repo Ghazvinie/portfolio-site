@@ -7,19 +7,18 @@ export default function Contact() {
     const iconDiv = 'border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100 cursor-pointer rounded-sm pb-10 flex flex-col m-6 justify-center items-center';
     const title = 'text-center text-2xl md:text-5xl mb-10';
 
-    const [winWidth, setWinWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState(window.innerWidth);
     const updateWidth = () => {
-        setWinWidth(window.innerWidth);
+        setWidth(window.innerWidth);
     }
     useEffect(() => {
         window.addEventListener('resize', updateWidth)
-
         return () => window.removeEventListener('resize',updateWidth);
     },[]);
 
     return (
         <div
-            className='border-black border-t-4 flex flex-col flex-wrap my-2 mx-2 p-2 mb-20 h-screen' name='contact'>
+            className={`border-black border-t-4 flex flex-col flex-wrap my-2 mx-2 p-2 mb-20 ${width <= 640 && 'h-screen'}`} name='contact'>
             <h1 className='text-4xl font-semibold'>Contact</h1>
             <p className=' ml-18 md:ml-36 text-1xl md:text-3xl md:leading-loose leading-loose md:text-center mt-4' >
                 If you would like to contact me regarding any employment opportunities, please do so through:

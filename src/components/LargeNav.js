@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 import { MdEmail } from 'react-icons/md';
 
 export default function LargeNav() {
-    const offSet = -94;
+    const offSet = -87;
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl';
     const linkActive = 'underline bg-black text-white rounded-sm'
     return (
@@ -35,7 +35,7 @@ export default function LargeNav() {
                     to='skills'
                     spy={true}
                     smooth={true}
-                    offset={-94}
+                    offset={offSet}
                     duration={500}
                 >Skills
                 </Link>
@@ -74,14 +74,14 @@ export default function LargeNav() {
                 </div>
                 <div className='text-center'>
                     <Link
-                        className='cursor-pointer font-medium text-md text-right text-white hover:text-black'
+                        className='cursor-pointer'
                         activeClass='underline'
                         to='bonus'
                         spy={true}
                         smooth={true}
                         offset={-50}
                         duration={500}
-                    >Bonus Photos
+                    ><p className=' font-medium text-md text-center text-white hover:text-black  mt-1'>Bonus Photos</p>
                     </Link>
                 </div>
             </div>
