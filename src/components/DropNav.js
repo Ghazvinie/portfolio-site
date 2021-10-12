@@ -8,7 +8,7 @@ import { CgClose } from 'react-icons/cg';
 
 export default function DropNav() {
     const [isOpen, setIsOpen] = useState(false);
-    const offSet =  - 300;
+    const offSet = - 300;
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer text-justify';
     const linkActive = 'underline bg-black text-white rounded-sm';
 
@@ -19,7 +19,10 @@ export default function DropNav() {
                     className='cursor-pointer'
                     onClick={() => setIsOpen(!isOpen)}
                 >
-                    {isOpen ? <CgClose style={{ width: 50, height: 50 }} /> : <RiMenuLine style={{ width: 50, height: 50 }} className='' />}
+                    {
+                        isOpen ? <CgClose style={{ width: 50, height: 50 }} />
+                            : <RiMenuLine style={{ width: 50, height: 50 }} className='' />
+                    }
                 </button>
                 {
                     isOpen &&
