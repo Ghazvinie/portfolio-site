@@ -20,6 +20,7 @@ export default function Welcome() {
         };
         return () => clearTimeout(timer);
     }, [text]);
+    
     return (
         <div
             className='welcome-container flex flex-wrap p-2 h-screen'>

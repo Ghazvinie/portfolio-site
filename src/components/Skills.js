@@ -2,7 +2,6 @@ import React from 'react';
 import skills from '../data/skillsData';
 
 export default function Skills() {
-
     const skillsDisplay = skills.map(skill => {
         const keys = Object.keys(skill)
         const categoryName = keys.includes('react') ? 'Frontend'
