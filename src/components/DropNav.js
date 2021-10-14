@@ -106,7 +106,6 @@ export default function DropNav() {
                     </Link>
                 </div>
             </div>
-
         </div>
-    )
+    );
 }

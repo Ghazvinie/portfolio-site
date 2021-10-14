@@ -2,7 +2,6 @@ import React from 'react';
 import FlashingArrows from './FlashingArrows';
 
 export default function About() {
-
     return (
         <div
             className='border-black border-t-4 flex justify-center flex-col flex-wrap m-2 p-2'

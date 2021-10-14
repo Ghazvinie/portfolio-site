@@ -42,5 +42,5 @@ export default function Contact() {
             </div>
             <p className='ml-18 md:ml-36 font-extralight text-black text-opacity-0 md:text-opacity-100'>That's it!</p>
         </div >
-    )
+    );
 }
