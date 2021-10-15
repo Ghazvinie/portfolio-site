@@ -6,7 +6,14 @@ import oauth from '../assets/oauth.png';
 const projects = [
     {
         title: 'Custom SpeechKit Audio Player',
-        description : 'Asked to develop a custom audio player based on SpeechKit\'s PlayerSDK',
+        description : 'Work experience project - developed a custom audio player based on SpeechKit\'s PlayerSDK',
+        github: 'https://github.com/Ghazvinie/custom-speechkit-audio-player',
+        live: 'ff',
+        img: player
+    },
+    {
+        title: 'SpeechKit RSS Validator',
+        description : 'Work experience project - developed an RSS feed validator.',
         github: 'https://github.com/Ghazvinie/custom-speechkit-audio-player',
         live: 'ff',
         img: player
@@ -20,26 +27,33 @@ const projects = [
     },
     {
         title: 'OAuth 2.0 Sign Up and Sign In',
-        description : 'An example of user authentication and authorisation based on OAuth protocol.',
+        description : 'An example of user authentication and authorisation based on the OAuth protocol.',
         github: 'https://github.com/Ghazvinie/user-auth-with-passport-oauth',
         live: '',
         img: oauth
     },
     {
-        title: 'Test Project',
-        description : 'Some information about the project',
-        github: 'www.google.com',
-        live: 'www.bbc.co.uk',
+        title: 'User Auth With JWT',
+        description : 'An example of user authentication and authorisation using JWT and CSRF tokens.',
+        github: 'https://github.com/Ghazvinie/user-auth-with-jwt',
+        live: '',
         img: 'somepic'
     },
     {
-        title: 'Test Project',
-        description : 'Some information about the project',
-        github: 'www.google.com',
-        live: 'www.bbc.co.uk',
+        title: 'MongoDB CRUD App',
+        description : 'An extension of a FCC challenge to create an exercise tracking app.',
+        github: 'https://github.com/Ghazvinie/mongodb-crud-exercise-tracker-app',
+        live: '',
         img: 'somepic'
     },
-
+    {
+        title: 'Conway\'s Game of Life',
+        description : 'JavaScript implementation of Conway\'s Game of Life.',
+        github: 'https://github.com/Ghazvinie/conways-game-of-life',
+        live: '',
+        img: 'somepic'
+    },
+    
 ]
 
 export default projects;
