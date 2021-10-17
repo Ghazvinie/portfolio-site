@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 import { MdEmail } from 'react-icons/md';
 
 export default function LargeNav() {
-    const offSet = -87;
+    const offSet = -84;
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl';
     const linkActive = 'underline bg-black text-white rounded-sm'
     return (
@@ -16,8 +16,8 @@ export default function LargeNav() {
                     spy={true}
                     smooth={true}
                     offset={offSet}
-                    duration={500}
-                >About
+                    duration={500}>
+                    About
                 </Link>
                 <Link
                     className={linkStyle}
@@ -26,8 +26,8 @@ export default function LargeNav() {
                     spy={true}
                     smooth={true}
                     offset={offSet}
-                    duration={500}
-                >Projects
+                    duration={500}>
+                    Projects
                 </Link>
                 <Link
                     className={linkStyle}
@@ -36,8 +36,8 @@ export default function LargeNav() {
                     spy={true}
                     smooth={true}
                     offset={offSet}
-                    duration={500}
-                >Skills
+                    duration={500}>
+                    Skills
                 </Link>
                 <Link
                     className={linkStyle}
@@ -45,9 +45,9 @@ export default function LargeNav() {
                     to='contact'
                     spy={true}
                     smooth={true}
-                    offset={offSet -10}
-                    duration={500}
-                >Contact
+                    offset={offSet - 15}
+                    duration={500}>
+                    Contact
                 </Link>
             </nav>
             <div className='flex flex-col mt-3'>
@@ -72,16 +72,16 @@ export default function LargeNav() {
                             style={{ height: 32, width: 32 }} />
                     </a>
                 </div>
-                <div className='text-center'>
+                <div className='text-center m-1'>
                     <Link
-                        className='cursor-pointer'
-                        activeClass='underline'
-                        to='bonus'
+                        className='font-medium text-md text-center text-white hover:text-black cursor-pointer p-1'
+                        activeClass='bg-black underline'
+                        to='photos'
                         spy={true}
                         smooth={true}
-                        offset={-50}
-                        duration={500}
-                    ><p className=' font-medium text-md text-center text-white hover:text-black  mt-1'>Bonus Photos</p>
+                        offset={offSet -5}
+                        duration={500}>
+                            Bonus Photos
                     </Link>
                 </div>
             </div>

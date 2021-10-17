@@ -20,7 +20,7 @@ const projects = [
     },
     {
         title: 'Express Error Handler',
-        description : 'Some examples of how errors can be hanlded in an ExpressJs application.',
+        description : 'Some examples of how errors can be handled in an ExpressJs application.',
         github: 'https://github.com/Ghazvinie/express-error-handler',
         live: '',
         img: error
