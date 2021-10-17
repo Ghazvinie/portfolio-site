@@ -8,7 +8,7 @@ import { CgClose } from 'react-icons/cg';
 
 export default function DropNav() {
     const [isOpen, setIsOpen] = useState(false);
-    const offSet = -290;
+    const offSet = -285;
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer text-justify';
     const linkActive = 'underline bg-black text-white rounded-sm';
 
@@ -93,16 +93,16 @@ export default function DropNav() {
                             style={{ height: 32, width: 32 }} />
                     </a>
                 </div>
-                <div className='text-center'>
+                <div className=''>
                     <Link
-                        className='cursor-pointer'
+                        className='font-medium text-md text-white hover:text-black cursor-pointer'
                         activeClass='underline'
-                        to='bonus'
+                        to='photos'
                         spy={true}
                         smooth={true}
-                        offset={-50}
-                        duration={500}
-                    ><p className='font-medium text-xs text-center text-white hover:text-black mt-1'>Bonus Photos</p>
+                        offset={offSet}
+                        duration={500}>
+                        <p className='text-center'>Bonus Photos</p>
                     </Link>
                 </div>
             </div>
