@@ -1,10 +1,10 @@
 import './App.css'
-import Nav from '../src/components/Nav';
+import Nav from './components/Nav';
 import Welcome from './components/Welcome';
-import About from '../src/components/About';
-import Skills from '../src/components/Skills';
+import About from './components/About';
+import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Contact from '../src/components/Contact';
+import Contact from './components/Contact';
 import Photos from './components/Photos';
 
 function App() {
