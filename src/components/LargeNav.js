@@ -45,7 +45,7 @@ export default function LargeNav() {
                     to='contact'
                     spy={true}
                     smooth={true}
-                    offset={offSet - 15}
+                    offset={offSet -8}
                     duration={500}>
                     Contact
                 </Link>
@@ -79,7 +79,7 @@ export default function LargeNav() {
                         to='photos'
                         spy={true}
                         smooth={true}
-                        offset={offSet -5}
+                        offset={offSet}
                         duration={500}>
                             Bonus Photos
                     </Link>
