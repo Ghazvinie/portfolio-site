@@ -14,19 +14,19 @@ export default function Projects() {
                 {
                     projects.map(project => (
                         <div className='flex flex-col ml-2 border-black border-b-2'>
-                            <img src={project.img} className='w-full h-48 object-scale-down text-center' alt={project.title} />
-                            <h1 className='text-center text-lg font-bold break-word mb-3 mt-4'>
+                            <img src={project.img} className='w-full h-48 object-scale-down text-center my-5' alt={project.title} />
+                            <h1 className='text-center text-lg font-bold break-word my-4'>
                                 {project.title}
                             </h1>
-                            <p className='break-word text-center text-medium font-light m-2 text-center'>
+                            <p className='break-word text-center text-medium font-light my-3 text-center'>
                                 {project.description}
                             </p>
-                            <div className='flex flex-row justify-center m-2'>
+                            <div className='flex flex-row justify-center my-2'>
                                 {
-                                    project.stack?.map(tech => <tech.icon style={{ width: 25, height: 25 }} className='m-1' title={tech.text}/>)
+                                    project.stack?.map(tech => <tech.icon style={{ width: 25, height: 25 }} className='mx-2' title={tech.text}/>)
                                 }
                             </div>
-                            <div className='flex items-center justify-center flex-row m-2'>
+                            <div className='flex items-center justify-center flex-row my-4'>
                                 <a
                                     href={`${project.github}`}
                                     rel='noreferrer'

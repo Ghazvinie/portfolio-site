@@ -34,8 +34,9 @@ const projects = [
     },
     {
         title: 'Express Error Handler',
-        description: 'Some examples of how errors can be handled in an ExpressJs application.',
+        description: 'Examples of how errors can be handled in an ExpressJs application, and how these errors might be processed to provide relevant information.',
         github: 'https://github.com/Ghazvinie/express-error-handler',
+        stack: [{ icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }],
         live: '',
         img: error
     },
