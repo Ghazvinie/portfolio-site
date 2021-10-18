@@ -1,22 +1,36 @@
 import player from '../assets/player.png';
 import error from '../assets/error.png';
 import oauth from '../assets/oauth.png';
+import rss from '../assets/rss.png';
 
+import {
+    SiHtml5,
+    SiCss3,
+    SiTailwindcss,
+    SiNodeDotJs,
+    SiMongodb,
+    SiJavascript,
+    SiReact,
+    SiRedux,
+} from 'react-icons/si';
+import { ReactComponent as expressjsIcon } from '../assets/expressjs.svg';
 
 const projects = [
     {
         title: 'Custom SpeechKit Audio Player',
         description : 'Work experience project - developed a custom audio player based on SpeechKit\'s PlayerSDK',
+        stack: [SiHtml5, SiCss3, SiJavascript, SiReact],
         github: 'https://github.com/Ghazvinie/custom-speechkit-audio-player',
         live: 'ff',
         img: player
     },
     {
         title: 'SpeechKit RSS Validator',
-        description : 'Work experience project - developed an RSS feed validator.',
-        github: 'https://github.com/Ghazvinie/custom-speechkit-audio-player',
-        live: 'ff',
-        img: player
+        description : 'Full Stack work experience project - this involved creating an RSS feed validator for clients to check their feeds are formatted correctly and include all necessary data.',
+        stack: [SiHtml5, SiCss3, SiJavascript, SiReact, SiNodeDotJs, expressjsIcon],
+        github: 'https://github.com/Ghazvinie/rss_validator',
+        live: 'https://speechkit-rss-validator.herokuapp.com/',
+        img: rss
     },
     {
         title: 'Express Error Handler',
