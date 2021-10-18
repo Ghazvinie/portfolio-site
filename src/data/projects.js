@@ -21,7 +21,7 @@ const projects = [
         description: 'Work experience project - developed a custom audio player based on SpeechKit\'s PlayserSDK and a guide on how this can be done.',
         stack: [{ icon: SiHtml5, text: 'HTML' }, { icon: SiCss3, text: 'CSS' }, { icon: SiJavascript, text: 'JavaScript' }, { icon: SiReact, text: 'ReactJS' }],
         github: 'https://github.com/Ghazvinie/custom-speechkit-audio-player',
-        live: 'ff',
+        live: 'https://speechkit-custom-audio-player.herokuapp.com/',
         img: player
     },
     {
