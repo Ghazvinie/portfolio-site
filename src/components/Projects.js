@@ -13,12 +13,12 @@ export default function Projects() {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ml-18 md:ml-36 justify-items-center items-center' >
                 {
                     projects.map(project => (
-                        <div className='flex flex-col ml-2 border-black border-b-2'>
-                            <img src={project.img} className='w-full h-48 object-scale-down text-center my-5' alt={project.title} />
+                        <div className='flex flex-col ml-2 items-center'>
+                            <img src={project.img} className='w-11/12 h-80 object-scale-down text-center my-5' alt={project.title} />
                             <h1 className='text-center text-lg font-bold break-word my-4'>
                                 {project.title}
                             </h1>
-                            <p className='break-word text-center text-medium font-light my-3 text-center'>
+                            <p className='break-word text-justify text-medium font-light my-3 text-center w-11/12'>
                                 {project.description}
                             </p>
                             <div className='flex flex-row justify-center my-2'>

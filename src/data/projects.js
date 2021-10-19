@@ -58,14 +58,15 @@ const projects = [
     {
         title: 'User Auth With JWT',
         description: 'User authentication and authorisation using JWT. After signup the user can access a protected resource and change their password. CSRF tokens are used to verify legitimate requests.',
-        stack: [{ icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, { icon: SiJsonwebtokens, text: 'JWT' }, { icon: SiMongodb, text: 'MongoDB' }],
+        stack: [{ icon: SiJavascript, text: 'JavaScript' }, { icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, { icon: SiJsonwebtokens, text: 'JWT' }, { icon: SiMongodb, text: 'MongoDB' }],
         github: 'https://github.com/Ghazvinie/user-auth-with-jwt',
         live: 'https://signup-jwt.herokuapp.com/',
         img: jwt || missing
     },
     {
         title: 'Conway\'s Game of Life',
-        description: 'JavaScript implementation of Conway\'s Game of Life.',
+        description: 'An implementation of Conway\'s Game of Life using JavaScript.',
+        stack: [{ icon: SiJavascript, text: 'JavaScript' }, { icon: SiHtml5, text: 'HTML' }, { icon: SiCss3, text: 'CSS' }],
         github: 'https://github.com/Ghazvinie/conways-game-of-life',
         live: 'https://game-of-life-conways.herokuapp.com/',
         img: conway || missing
