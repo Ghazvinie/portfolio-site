@@ -3,7 +3,9 @@ import error from '../assets/projectPics/error.png';
 import oauthPassport from '../assets/projectPics/oauthPassport.png';
 import rss from '../assets/projectPics/rss.png';
 import jwt from '../assets/projectPics/jwt.png';
+import mongoCrud from '../assets/projectPics/mongoCrud.png';
 import missing from '../assets/projectPics/missing.jpg';
+
 
 import {
     SiHtml5,
@@ -55,26 +57,27 @@ const projects = [
     },
     {
         title: 'User Auth With JWT',
-        description: 'User authentication and authorisation using JWT. After signup the user can access a protected resource, and change their password. CSRF tokens are used to verify legitimate requests.',
-        github: 'https://github.com/Ghazvinie/user-auth-with-jwt',
+        description: 'User authentication and authorisation using JWT. After signup the user can access a protected resource and change their password. CSRF tokens are used to verify legitimate requests.',
         stack: [{ icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, { icon: SiJsonwebtokens, text: 'JWT' }, { icon: SiMongodb, text: 'MongoDB' }],
+        github: 'https://github.com/Ghazvinie/user-auth-with-jwt',
         live: 'https://signup-jwt.herokuapp.com/',
-        img: jwt
-    },
-    {
-        title: 'MongoDB CRUD App',
-        description: 'An extension of a FCC challenge to create an exercise tracking app.',
-        github: 'https://github.com/Ghazvinie/mongodb-crud-exercise-tracker-app',
-        live: '',
-        img: null || missing
-    },
-    {
-        title: 'Conway\'s Game of Life',
-        description: 'JavaScript implementation of Conway\'s Game of Life.',
-        github: 'https://github.com/Ghazvinie/conways-game-of-life',
-        live: '',
-        img: 'somepic' || missing
-    },
+        img: jwt || missing
+        },
+        {
+            title: 'Conway\'s Game of Life',
+            description: 'JavaScript implementation of Conway\'s Game of Life.',
+            github: 'https://github.com/Ghazvinie/conways-game-of-life',
+            live: '',
+            img: 'somepic' || missing
+        },
+        {
+            title: 'MongoDB CRUD App',
+            description: 'An extension of a FCC challenge to create an exercise tracking app. It was extended by creating additional database methods and some extra functionality.',
+            stack: [{ icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, { icon: SiMongodb, text: 'MongoDB' }],
+            github: 'https://github.com/Ghazvinie/mongodb-crud-exercise-tracker-app',
+            live: 'https://freecc-exercise-tracker.herokuapp.com/',
+            img: mongoCrud || missing
+        },
 
 ]
 
