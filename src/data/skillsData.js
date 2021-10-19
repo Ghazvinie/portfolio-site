@@ -17,8 +17,8 @@ import {
     SiGraphql,
     SiGit
 } from 'react-icons/si';
-import { ReactComponent as expressjsIcon } from '../assets/expressjs.svg'
-import { ReactComponent as restIcon } from '../assets/api.svg'
+import { ReactComponent as expressjsIcon } from '../assets/icons/expressjs.svg'
+import { ReactComponent as restIcon } from '../assets/icons/api.svg'
 
 
 const skills = [{
