@@ -67,7 +67,7 @@ const projects = [
         title: 'Conway\'s Game of Life',
         description: 'JavaScript implementation of Conway\'s Game of Life.',
         github: 'https://github.com/Ghazvinie/conways-game-of-life',
-        live: '',
+        live: 'https://game-of-life-conways.herokuapp.com/',
         img: conway || missing
     },
     {
