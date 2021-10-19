@@ -4,8 +4,8 @@ import oauthPassport from '../assets/projectPics/oauthPassport.png';
 import rss from '../assets/projectPics/rss.png';
 import jwt from '../assets/projectPics/jwt.png';
 import mongoCrud from '../assets/projectPics/mongoCrud.png';
+import conway from '../assets/projectPics/conway.png';
 import missing from '../assets/projectPics/missing.jpg';
-
 
 import {
     SiHtml5,
@@ -62,22 +62,22 @@ const projects = [
         github: 'https://github.com/Ghazvinie/user-auth-with-jwt',
         live: 'https://signup-jwt.herokuapp.com/',
         img: jwt || missing
-        },
-        {
-            title: 'Conway\'s Game of Life',
-            description: 'JavaScript implementation of Conway\'s Game of Life.',
-            github: 'https://github.com/Ghazvinie/conways-game-of-life',
-            live: '',
-            img: 'somepic' || missing
-        },
-        {
-            title: 'MongoDB CRUD App',
-            description: 'An extension of a FCC challenge to create an exercise tracking app. It was extended by creating additional database methods and some extra functionality.',
-            stack: [{ icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, { icon: SiMongodb, text: 'MongoDB' }],
-            github: 'https://github.com/Ghazvinie/mongodb-crud-exercise-tracker-app',
-            live: 'https://freecc-exercise-tracker.herokuapp.com/',
-            img: mongoCrud || missing
-        },
+    },
+    {
+        title: 'Conway\'s Game of Life',
+        description: 'JavaScript implementation of Conway\'s Game of Life.',
+        github: 'https://github.com/Ghazvinie/conways-game-of-life',
+        live: '',
+        img: conway || missing
+    },
+    {
+        title: 'MongoDB CRUD App',
+        description: 'An extension of a FCC challenge to create an exercise tracking app. It was extended by creating additional database methods and some extra functionality.',
+        stack: [{ icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, { icon: SiMongodb, text: 'MongoDB' }],
+        github: 'https://github.com/Ghazvinie/mongodb-crud-exercise-tracker-app',
+        live: 'https://freecc-exercise-tracker.herokuapp.com/',
+        img: mongoCrud || missing
+    },
 
 ]
 
