@@ -1,6 +1,6 @@
 import player from '../assets/player.png';
 import error from '../assets/error.png';
-import oauth from '../assets/oauth.png';
+import oauthPassport from '../assets/oauthPassport.png';
 import rss from '../assets/rss.png';
 
 import {
@@ -12,8 +12,10 @@ import {
     SiJavascript,
     SiReact,
     SiRedux,
+    SiPassport,
 } from 'react-icons/si';
 import { ReactComponent as expressjsIcon } from '../assets/expressjs.svg';
+import {ReactComponent as oauthIcon} from '../assets/oauthIcon.svg';
 
 const projects = [
     {
@@ -35,17 +37,18 @@ const projects = [
     {
         title: 'Express Error Handler',
         description: 'Examples of how errors can be handled in an ExpressJs application, and how these errors might be processed to provide relevant information.',
-        github: 'https://github.com/Ghazvinie/express-error-handler',
         stack: [{ icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }],
+        github: 'https://github.com/Ghazvinie/express-error-handler',
         live: '',
         img: error
     },
     {
         title: 'OAuth 2.0 Sign Up and Sign In',
-        description: 'An example of user authentication and authorisation based on the OAuth protocol.',
+        description: 'User authentication and authorisation based on the OAuth protocol. Through use of the Passport middleware the user is able to sign up with their Google account, or by providing their own details.',
+        stack: [{ icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, {icon: oauthIcon, text: 'OAuth 2.0'}, {icon: SiNodeDotJs, text: 'Passport'}],
         github: 'https://github.com/Ghazvinie/user-auth-with-passport-oauth',
-        live: '',
-        img: oauth
+        live: 'https://oauth-passport-signup.herokuapp.com/',
+        img: oauthPassport
     },
     {
         title: 'User Auth With JWT',
