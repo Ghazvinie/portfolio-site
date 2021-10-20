@@ -22,9 +22,9 @@ export default function Contact() {
             name='contact'
             >
             <h1 className='text-4xl font-semibold' >Contact</h1>
-            <p className=' ml-18 md:ml-36 text-1xl md:text-3xl md:leading-loose leading-loose md:text-center mt-4' >
+            {/* <p className=' ml-18 md:ml-36 text-1xl md:text-3xl md:leading-loose leading-loose md:text-center mt-4' >
                 If you would like to contact me regarding any employment opportunities, please do so through:
-            </p>
+            </p> */}
             <div className='ml-18 md:ml-36 justify-center items-center flex flex-col md:h-screen'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:-mt-96 justify-center items-center'>
                     <a href="mailto:danielghazvinie@protonmail.com" rel='noreferrer' target='_blank'>
