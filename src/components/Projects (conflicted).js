@@ -13,7 +13,7 @@ export default function Projects() {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ml-18 md:ml-36 justify-items-center items-center' >
                 {
                     projects.map(project => (
-                        <div className='grid auto-rows-min gap-0 ml-2 items-center'>
+                        <div className='flex flex-col ml-2 items-center hover:shadow-sm'>
                             <img src={project.img} className='w-11/12 h-80 object-scale-down text-center my-5' alt={project.title} />
                             <h1 className='text-center text-lg font-bold break-word my-4'>
                                 {project.title}

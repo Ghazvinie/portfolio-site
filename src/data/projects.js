@@ -49,7 +49,7 @@ const projects = [
     },
     {
         title: 'OAuth 2.0 Sign Up and Sign In',
-        description: 'User authentication and authorisation based on the OAuth 2.0 protocol. Through use of the Passport middleware the user is able to sign up with their Google account, or by providing their own details.',
+        description: 'User auth implemented with Passport and using the OAuth2.0 protocol. The user cab sign up with their Google account, or by providing their own details.',
         stack: [{ icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, { icon: oauthIcon, text: 'OAuth 2.0' }, { icon: passportIcon, text: 'Passport' }, { icon: SiMongodb, text: 'MongoDB' }],
         github: 'https://github.com/Ghazvinie/user-auth-with-passport-oauth',
         live: 'https://oauth-passport-signup.herokuapp.com/',
@@ -57,7 +57,7 @@ const projects = [
     },
     {
         title: 'User Auth With JWT',
-        description: 'User authentication and authorisation using JWT. After signup the user can access a protected resource and change their password. CSRF tokens are used to verify legitimate requests.',
+        description: 'User auth using JWT. After signup the user can access a protected resource and change their password. CSRF tokens are used to verify legitimate requests.',
         stack: [{ icon: SiJavascript, text: 'JavaScript' }, { icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, { icon: SiJsonwebtokens, text: 'JWT' }, { icon: SiMongodb, text: 'MongoDB' }],
         github: 'https://github.com/Ghazvinie/user-auth-with-jwt',
         live: 'https://signup-jwt.herokuapp.com/',
@@ -65,7 +65,7 @@ const projects = [
     },
     {
         title: 'Conway\'s Game of Life',
-        description: 'An implementation of Conway\'s Game of Life using JavaScript.',
+        description: 'Made solely with HTML, CSS and vanilla JavaScript, this is an implementation of Conway\'s Game of Life, the cellular automaton. Pick some cells and start some life!',
         stack: [{ icon: SiJavascript, text: 'JavaScript' }, { icon: SiHtml5, text: 'HTML' }, { icon: SiCss3, text: 'CSS' }],
         github: 'https://github.com/Ghazvinie/conways-game-of-life',
         live: 'https://game-of-life-conways.herokuapp.com/',
