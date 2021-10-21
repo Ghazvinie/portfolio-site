@@ -1,11 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, animateScroll } from 'react-scroll';
 import { SocialIcon } from 'react-social-icons';
 import { MdEmail } from 'react-icons/md';
 import { IoIosArrowUp } from 'react-icons/io'
 
 export default function LargeNav() {
-    const [height, setHeight] = React.useState(window.innerHeight)
+    const [scroll, setScroll] = useState(window.scrollY);
+
+    const updateScroll = () => {
+        setScroll(window.scrollY);
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', updateScroll)
+        return () => window.removeEventListener('scroll', updateScroll);
+    }, []);
+
+
+
 
     const offSet = -84;
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100';
@@ -53,11 +64,13 @@ export default function LargeNav() {
                     duration={500}>
                     Contact
                 </Link>
-                <div className='flex flex-col justify-between cursor-pointer'>
-                    <IoIosArrowUp />
-                    <IoIosArrowUp />
-                    <IoIosArrowUp />
-                </div>
+                {
+                    scroll > 400 &&
+                    <div className='flex flex-col justify-center cursor-pointer ml-4' onClick={() => animateScroll.scrollToTop()}>
+
+                        <IoIosArrowUp style={{ height: 40, width: 40 }}/>
+                    </div>
+                }
             </nav>
             <div className='flex flex-col mt-3'>
                 <div className='flex flex-row items-center justify-center'>
