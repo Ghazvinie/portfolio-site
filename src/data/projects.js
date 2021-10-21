@@ -72,6 +72,14 @@ const projects = [
         img: conway || missing
     },
     {
+        title: 'Node Payment Integration',
+        description: 'Made solely with HTML, CSS and vanilla JavaScript, this is an implementation of Conway\'s Game of Life, the cellular automaton. Pick some cells and start some life!',
+        stack: [{ icon: SiJavascript, text: 'JavaScript' }, { icon: SiHtml5, text: 'HTML' }, { icon: SiCss3, text: 'CSS' }],
+        github: 'https://github.com/Ghazvinie/conways-game-of-life',
+        live: 'https://paypal-stripe-payment.herokuapp.com/',
+        img: conway || missing
+    },
+    {
         title: 'MongoDB CRUD App',
         description: 'An extension of a FCC challenge to create an exercise tracking app. It was extended by creating additional database methods and some extra functionality.',
         stack: [{ icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, { icon: SiMongodb, text: 'MongoDB' }],
