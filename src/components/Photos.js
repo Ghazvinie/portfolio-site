@@ -9,7 +9,7 @@ export default function Photos() {
         >
             <div className='flex flex-row items-end'>
             <h1 className='text-4xl font-semibold '>Photos</h1>
-            <h2 className='ml-5 text-sm font-extralight'>(Some personal snaps of mine)</h2>
+            <h2 className='ml-5 text-sm font-extralight'>(some personal snaps of mine)</h2>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-40 ml-18 md:ml-36 justify-items-center items-center md:mr-10 mt-4' >
                 {

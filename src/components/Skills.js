@@ -20,7 +20,7 @@ export default function Skills() {
                         return (
                             <div className='flex flex-col items-center mx-2 md:mx-5 my-4'>
                                 <Icon style={{ height: 60, width: 60 }} />
-                                <p className='m-2 font-semibold border-b-2 border-black text-md md:text-xl b-black pb-1 text-center' >
+                                <p className='m-2 font-semibold  text-md md:text-xl b-black pb-1 text-center' >
                                     {skill[key].name}
                                 </p>
                             </div>
@@ -34,7 +34,7 @@ export default function Skills() {
 
     return (
         <div
-            className='border-black border-t-4 flex flex-col flex-wrap justify-center my-2 p-2' name='skills'>
+            className='border-black border-t-4 flex flex-col flex-wrap justify-center m-2 p-2' name='skills'>
             <h1 className='text-4xl font-semibold' >Skills</h1>
             <div className='flex flex-col flex-wrap justify-center ml-18 md:ml-36 md:h-screen'>
                 {skillsDisplay}
