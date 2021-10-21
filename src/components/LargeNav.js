@@ -6,7 +6,6 @@ import { IoIosArrowUp } from 'react-icons/io'
 
 export default function LargeNav() {
     const [scroll, setScroll] = useState(window.scrollY);
-    const [enter, setEnter] = useState(false);
 
     const updateScroll = () => {
         setScroll(window.scrollY);
@@ -16,18 +15,9 @@ export default function LargeNav() {
         return () => window.removeEventListener('scroll', updateScroll);
     }, []);
 
-    const handleEnterLeave = (e) => {
-        setEnter((prevEnter) => !prevEnter);
-    };
-
-
-
     const offSet = -84;
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100';
     const linkActive = 'underline bg-black text-white rounded-sm';
-    const linkUnderline = 'border-b-2 border-black border-opacity-0 border-opacity-0 mt-2 w-5 self-center'
-    const linkUnderlineActive = 'border-b-2 border-black border-opacity-0 border-opacity-100 mt-2 w-5 self-center'
-
 
     return (
         <div className='flex flex-row justify-between'>
@@ -89,9 +79,7 @@ export default function LargeNav() {
                             className='mx-1 mb-2'
                             target='_blank'
                             style={{ height: 30, width: 30 }}
-                            title='GitHub'
-                            onMouseEnter={handleEnterLeave} 
-                            onMouseLeave={handleEnterLeave}/>
+                            title='GitHub' />
 
                     </div>
                     <div className='flex flex-col border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
@@ -101,9 +89,7 @@ export default function LargeNav() {
                             target='_blank'
                             className='mx-1 mb-2'
                             style={{ height: 30, width: 30 }}
-                            title='LinkedIn' 
-                            onMouseEnter={handleEnterLeave} 
-                            onMouseLeave={handleEnterLeave}/>
+                            title='LinkedIn' />
                     </div>
                     <div className='flex flex-col border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
                         <a href='mailto:danielghazvinie@protonmail.com'>
@@ -112,9 +98,7 @@ export default function LargeNav() {
                                 target='_blank'
                                 className='mx-1 mb-2'
                                 style={{ height: 32, width: 32 }}
-                                title='Email' 
-                                onMouseEnter={handleEnterLeave} 
-                            onMouseLeave={handleEnterLeave}/>
+                                title='Email' />
                         </a>
                     </div>
                 </div>
