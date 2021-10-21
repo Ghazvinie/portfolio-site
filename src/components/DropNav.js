@@ -1,29 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import { Link } from 'react-scroll';
+import { Link, animateScroll } from 'react-scroll';
 import { SocialIcon } from 'react-social-icons';
 import { MdEmail } from 'react-icons/md';
 import { RiMenuLine } from 'react-icons/ri';
 import { CgClose } from 'react-icons/cg';
+import { IoIosArrowUp } from 'react-icons/io'
+
 
 export default function DropNav() {
     const [isOpen, setIsOpen] = useState(false);
+    const [scroll, setScroll] = useState(window.scrollY);
+
     const offSet = -285;
-    const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer text-justify';
+    const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer text-justify border-black border-solid border-b-2 border-opacity-0 hover:border-opacity-100 w-min';
     const linkActive = 'underline bg-black text-white rounded-sm';
+
+    const updateScroll = () => {
+        setScroll(window.scrollY);
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', updateScroll)
+        return () => window.removeEventListener('scroll', updateScroll);
+    }, []);
 
     return (
         <div className='flex flex-row justify-between'>
             <nav className='flex flex-col w-min'>
-                <button
-                    className='cursor-pointer'
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    {
-                        isOpen ? <CgClose style={{ width: 50, height: 50 }} />
-                            : <RiMenuLine style={{ width: 50, height: 50 }} className='' />
-                    }
-                </button>
+                {
+                    isOpen ?
+                        <div className='flex flex-row'>
+                            <CgClose style={{ width: 50, height: 50 }} onClick={() => setIsOpen(!isOpen)} className='cursor-pointer' />
+                            {
+                                scroll > 500 &&
+                                <div className='cursor-pointer self-center ml-20' onClick={() => animateScroll.scrollToTop()}>
+                                    <IoIosArrowUp style={{ height: 40, width: 40 }} />
+                                </div>
+                            }
+
+                        </div>
+                        : <RiMenuLine style={{ width: 50, height: 50 }} className='cursor-pointer' onClick={() => setIsOpen(!isOpen)} />
+                }
+
                 {
                     isOpen &&
                     <div className='flex flex-col text-md text-2xl'>
@@ -70,8 +88,10 @@ export default function DropNav() {
                     </div>
                 }
 
+
             </nav>
             <div className='flex flex-col w-min'>
+
                 <div className='flex flex-row  items-center justify-center'>
                     <SocialIcon
                         url='https://github.com/Ghazvinie'
@@ -93,10 +113,11 @@ export default function DropNav() {
                             style={{ height: 32, width: 32 }} />
                     </a>
                 </div>
+
                 <div className=''>
                     <Link
-                        className='font-medium text-md text-white hover:text-black cursor-pointer'
-                        activeClass='underline'
+                        className='font-medium text-md text-black hover:text-black cursor-pointer'
+                        activeClass='underline text-black'
                         to='photos'
                         spy={true}
                         smooth={true}
@@ -105,6 +126,7 @@ export default function DropNav() {
                         <p className='text-center'>Bonus Photos</p>
                     </Link>
                 </div>
+
             </div>
         </div>
     );
