@@ -6,6 +6,7 @@ import { IoIosArrowUp } from 'react-icons/io'
 
 export default function LargeNav() {
     const [scroll, setScroll] = useState(window.scrollY);
+    const [enter, setEnter] = useState(false);
 
     const updateScroll = () => {
         setScroll(window.scrollY);
@@ -15,12 +16,19 @@ export default function LargeNav() {
         return () => window.removeEventListener('scroll', updateScroll);
     }, []);
 
+    const handleEnterLeave = (e) => {
+        setEnter((prevEnter) => !prevEnter);
+    };
 
 
 
     const offSet = -84;
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100';
-    const linkActive = 'underline bg-black text-white rounded-sm'
+    const linkActive = 'underline bg-black text-white rounded-sm';
+    const linkUnderline = 'border-b-2 border-black border-opacity-0 border-opacity-0 mt-2 w-5 self-center'
+    const linkUnderlineActive = 'border-b-2 border-black border-opacity-0 border-opacity-100 mt-2 w-5 self-center'
+
+
     return (
         <div className='flex flex-row justify-between'>
             <nav className='flex flex-wrap mb-1'>
@@ -68,34 +76,47 @@ export default function LargeNav() {
                     scroll > 400 &&
                     <div className='flex flex-col justify-center cursor-pointer ml-4' onClick={() => animateScroll.scrollToTop()}>
 
-                        <IoIosArrowUp style={{ height: 40, width: 40 }}/>
+                        <IoIosArrowUp style={{ height: 40, width: 40 }} />
                     </div>
                 }
             </nav>
             <div className='flex flex-col mt-3'>
-                <div className='flex flex-row items-center justify-center'>
-                    <SocialIcon
-                        url='https://github.com/Ghazvinie'
-                        bgColor='grey'
-                        className='mx-1 hover:blue-200 '
-                        target='_blank'
-                        style={{ height: 30, width: 30 }}
-                        title='GitHub' />
-                    <SocialIcon
-                        url='https://www.linkedin.com/in/daniel-ghazvinie-53a304188/'
-                        bgColor='grey'
-                        target='_blank'
-                        className='mx-1'
-                        style={{ height: 30, width: 30 }}
-                        title='LinkedIn' />
-                    <a href='mailto:danielghazvinie@protonmail.com'>
-                        <MdEmail
+                <div className='flex flex-row items-centerjustify-center'>
+                    <div className='flex flex-col border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
+                        <SocialIcon
+                            url='https://github.com/Ghazvinie'
+                            bgColor='black'
+                            className='mx-1 mb-2'
+                            target='_blank'
+                            style={{ height: 30, width: 30 }}
+                            title='GitHub'
+                            onMouseEnter={handleEnterLeave} 
+                            onMouseLeave={handleEnterLeave}/>
+
+                    </div>
+                    <div className='flex flex-col border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
+                        <SocialIcon
+                            url='https://www.linkedin.com/in/daniel-ghazvinie-53a304188/'
                             bgColor='black'
                             target='_blank'
-                            className='mx-1'
-                            style={{ height: 32, width: 32 }}
-                            title='Email' />
-                    </a>
+                            className='mx-1 mb-2'
+                            style={{ height: 30, width: 30 }}
+                            title='LinkedIn' 
+                            onMouseEnter={handleEnterLeave} 
+                            onMouseLeave={handleEnterLeave}/>
+                    </div>
+                    <div className='flex flex-col border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
+                        <a href='mailto:danielghazvinie@protonmail.com'>
+                            <MdEmail
+                                bgColor='black'
+                                target='_blank'
+                                className='mx-1 mb-2'
+                                style={{ height: 32, width: 32 }}
+                                title='Email' 
+                                onMouseEnter={handleEnterLeave} 
+                            onMouseLeave={handleEnterLeave}/>
+                        </a>
+                    </div>
                 </div>
                 <div className='text-center m-1'>
                     <Link
