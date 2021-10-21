@@ -27,23 +27,21 @@ export default function Projects() {
                                 }
                             </div>
                             <div className='flex items-center justify-center flex-row my-4'>
-                                <div className='border-black border-b-2 border-opacity-0 hover:border-opacity-100 flex max-w-min items-center'>
                                 <a
                                     href={`${project.github}`}
                                     rel='noreferrer'
                                     target='_blank'
                                     title='GitHub Link'
-                                    className='mx-5 '>
+                                    className='mx-5 border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
                                     <FaGithubSquare style={{ width: 25, height: 25 }} />
                                 </a>
-                                </div>
                                 {
                                     project.live && <a
                                         href={`${project.live}`}
                                         rel='noreferrer'
                                         target='_blank'
                                         title='Live Link'
-                                        className='mx-5'>
+                                        className='mx-5 border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
                                         <BiLinkExternal style={{ width: 25, height: 25 }} />
                                     </a>
                                 }
