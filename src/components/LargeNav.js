@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, animateScroll } from 'react-scroll';
-import { SocialIcon } from 'react-social-icons';
 import { MdEmail } from 'react-icons/md';
 import { IoIosArrowUp } from 'react-icons/io'
+import { AiFillLinkedin } from 'react-icons/ai'
+import { VscGithubInverted } from 'react-icons/vsc'
 
 export default function LargeNav() {
     const [scroll, setScroll] = useState(window.scrollY);
@@ -18,6 +19,8 @@ export default function LargeNav() {
     const offSet = -84;
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100';
     const linkActive = 'underline bg-black text-white rounded-sm';
+    const iconStyle = 'border-black border-b-2 border-opacity-0 hover:border-opacity-100 mx-1';
+    const iconSize = { height: 30, width: 30 };
 
     return (
         <div className='flex flex-row justify-between'>
@@ -71,36 +74,22 @@ export default function LargeNav() {
                 }
             </nav>
             <div className='flex flex-col mt-3'>
-                <div className='flex flex-row items-centerjustify-center'>
-                    <div className='flex flex-col border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
-                        <SocialIcon
-                            url='https://github.com/Ghazvinie'
-                            bgColor='black'
-                            className='mx-1 mb-2'
-                            target='_blank'
-                            style={{ height: 30, width: 30 }}
+                <div className='flex flex-row items-center justify-center'>
+                    <a href='https://github.com/Ghazvinie' className={iconStyle} target='_blank' rel='noreferrer'>
+                        <VscGithubInverted
+                            style={iconSize}
                             title='GitHub' />
-
-                    </div>
-                    <div className='flex flex-col border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
-                        <SocialIcon
-                            url='https://www.linkedin.com/in/daniel-ghazvinie-53a304188/'
-                            bgColor='black'
-                            target='_blank'
-                            className='mx-1 mb-2'
-                            style={{ height: 30, width: 30 }}
+                    </a>
+                    <a href='https://www.linkedin.com/in/daniel-ghazvinie-53a304188/' className={iconStyle} target='_blank' rel='noreferrer'>
+                        <AiFillLinkedin
+                            style={iconSize}
                             title='LinkedIn' />
-                    </div>
-                    <div className='flex flex-col border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
-                        <a href='mailto:danielghazvinie@protonmail.com'>
-                            <MdEmail
-                                bgColor='black'
-                                target='_blank'
-                                className='mx-1 mb-2'
-                                style={{ height: 32, width: 32 }}
-                                title='Email' />
-                        </a>
-                    </div>
+                    </a>
+                    <a href='mailto:danielghazvinie@protonmail.com' className={iconStyle} target='_blank' rel='noreferrer'>
+                        <MdEmail
+                            style={iconSize}
+                            title='Email' />
+                    </a>
                 </div>
                 <div className='text-center m-1'>
                     <Link
