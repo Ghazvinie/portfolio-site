@@ -32,7 +32,7 @@ export default function Projects() {
                                     rel='noreferrer'
                                     target='_blank'
                                     title='GitHub Link'
-                                    className='mx-5 border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
+                                    className='mx-5 border-black border-b-2 border-opacity-0 hover:border-opacity-100 pb-1'>
                                     <FaGithubSquare style={{ width: 25, height: 25 }} />
                                 </a>
                                 {
@@ -41,7 +41,7 @@ export default function Projects() {
                                         rel='noreferrer'
                                         target='_blank'
                                         title='Live Link'
-                                        className='mx-5 border-black border-b-2 border-opacity-0 hover:border-opacity-100'>
+                                        className='mx-5 border-black border-b-2 border-opacity-0 hover:border-opacity-100 pb-1'>
                                         <BiLinkExternal style={{ width: 25, height: 25 }} />
                                     </a>
                                 }
