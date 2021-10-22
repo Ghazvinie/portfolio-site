@@ -75,13 +75,14 @@ export default function LargeNav() {
                         duration={500}>
                         Photos
                     </Link>
+                    {
+                    scroll > 800 &&
+                        <IoIosArrowUp style={{ height: 35, width: 35 }} className='cursor-pointer self-center' onClick={() => animateScroll.scrollToTop()} />
+                }
 
             </nav>
             <div className='flex flex-row self-center'>
-            {
-                    scroll > 800 &&
-                        <IoIosArrowUp style={{ height: 35, width: 35 }} className='cursor-pointer' onClick={() => animateScroll.scrollToTop()} />
-                }
+
                     <a href='https://github.com/Ghazvinie' className={iconStyle} target='_blank' rel='noreferrer'>
                         <VscGithubInverted
                             style={iconSize}
