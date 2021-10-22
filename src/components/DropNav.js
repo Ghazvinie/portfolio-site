@@ -18,8 +18,8 @@ export default function DropNav() {
     const offSet = -355
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer text-justify border-black border-solid border-b-2 border-opacity-0 hover:border-opacity-100 w-min';
     const linkActive = 'underline bg-black text-white rounded-sm';
-    const iconStyle = 'border-black border-b-2 border-opacity-0 hover:border-opacity-100 mx-1  max-h-7';
-    const iconSize = { height: 25, width: 25 };
+    const iconStyle = 'border-black border-b-2 border-opacity-0 hover:border-opacity-100 mx-1 max-h-9';
+    const iconSize = { height: 28, width: 28 };
 
     const updateScroll = () => {
         setScroll(window.scrollY);
@@ -37,14 +37,14 @@ export default function DropNav() {
                         <div className='flex flex-row w-min'>
                             <CgClose style={{ width: 50, height: 50 }} onClick={() => setIsOpen(!isOpen)} className='cursor-pointer' />
                             {
-                                scroll > 500 && <IoIosArrowUp style={{ height: 40, width: 40 }} className={`cursor-pointer place-self-center `} onClick={() => animateScroll.scrollToTop()} />
+                                scroll > 500 && <IoIosArrowUp style={{ height: 40, width: 40 }} className='cursor-pointer place-self-center ml-2' onClick={() => animateScroll.scrollToTop()} />
                             }
                         </div>
                         :
                         <div className='flex flex-row'>
                             <RiMenuLine style={{ width: 50, height: 50 }} className='cursor-pointer' onClick={() => setIsOpen(!isOpen)} />
                             {
-                                scroll > 500 && <IoIosArrowUp style={{ height: 40, width: 40 }} className={`cursor-pointer place-self-center `} onClick={() => animateScroll.scrollToTop()} />
+                                scroll > 500 && <IoIosArrowUp style={{ height: 40, width: 40 }} className='cursor-pointer place-self-center ml-2' onClick={() => animateScroll.scrollToTop()} />
                             }
                         </div>
                 }
@@ -104,7 +104,7 @@ export default function DropNav() {
                     </div>
                 }
             </nav>
-            <div className={`flex flex-row justify-center   ${!isOpen ? 'items-center' : 'mt-3'}`}>
+            <div className='flex flex-row self-start mt-3'>
                 <a href='https://github.com/Ghazvinie' className={iconStyle} target='_blank' rel='noreferrer'>
                     <VscGithubInverted
                         style={iconSize}
