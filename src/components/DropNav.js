@@ -103,15 +103,7 @@ export default function DropNav() {
                         </Link>
                     </div>
                 }
-
-
             </nav>
-            {/* {
-                scroll > 500 &&
-
-                <IoIosArrowUp style={{ height: 40, width: 40 }} className={`cursor-pointer place-self-center -ml-36 ${isOpen && '-mt-72 -ml-56'}`} onClick={() => animateScroll.scrollToTop()} />
-
-            } */}
             <div className={`flex flex-row justify-center   ${!isOpen ? 'items-center' : 'mt-3'}`}>
                 <a href='https://github.com/Ghazvinie' className={iconStyle} target='_blank' rel='noreferrer'>
                     <VscGithubInverted
