@@ -4,43 +4,15 @@ import { IoIosArrowDown } from 'react-icons/io';
 export default function FlashingArrows() {
     const [index, setIndex] = useState(0);
     const [arrows, setArrows] = useState([
-        <IoIosArrowDown style={{ color: 'rgba(128, 128, 128, 0.329)' }} className='my-1' />,
-        <IoIosArrowDown className='my-1' />,
-        <IoIosArrowDown className='my-1' />,
-        <IoIosArrowDown className='my-1' />,
-        <IoIosArrowDown className='my-1' />,
-        <IoIosArrowDown className='my-1' />,
-        <IoIosArrowDown className='my-1' />,
-        <IoIosArrowDown className='my-1' />,
+        <IoIosArrowDown style={{ color: 'rgba(128, 128, 128, 0.329)' }} className='my-1' key={0}/>,
+        <IoIosArrowDown className='my-1' key={1}/>,
+        <IoIosArrowDown className='my-1' key={2}/>,
+        <IoIosArrowDown className='my-1' key={3}/>,
+        <IoIosArrowDown className='my-1' key={4}/>,
+        <IoIosArrowDown className='my-1' key={5}/>,
+        <IoIosArrowDown className='my-1' key={6}/>,
+        <IoIosArrowDown className='my-1' key={7}/>,
     ]);
-    // const [numArrows, setNumArrows] = useState(3);
-
-    // const updateHeight = () => {
-    //     const { innerHeight } = window;
-    //     const num = Math.round(innerHeight / 100);
-    //     setNumArrows(num);
-    // };
-
-    // useEffect(() => {
-    //     window.addEventListener('resize', () => updateHeight())
-    //     return () => window.removeEventListener('resize', updateHeight());
-    // }, []);
-
-    // useEffect(() => {
-    //     const tempArr = [<IoIosArrowDown style={{ color: 'rgba(128, 128, 128, 0.329)' }} className='my-1' />];
-    //     for (let i = 0; i < numArrows + 1; i++) {
-    //         tempArr.push(<IoIosArrowDown className='my-1' />)
-    //     };
-    //     console.log(tempArr)
-
-    //     setArrows(tempArr)
-    //     console.log(arrows.length)
-
-    //     return () => setArrows([<IoIosArrowDown style={{ color: 'rgba(128, 128, 128, 0.329)' }} className='my-1' />]);
-    // }, [numArrows])
-
-
-
     useEffect(() => {
         index > arrows.length - 1 && setIndex(0);
         const move = (from, to) => {

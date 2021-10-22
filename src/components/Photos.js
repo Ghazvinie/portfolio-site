@@ -13,8 +13,8 @@ export default function Photos() {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-40 ml-18 md:ml-36 justify-items-center items-center md:mr-10 mt-4' >
                 {
-                    photos.map(photo => (
-                        <img src={photo.img} alt={photo.desc} className='w-full h-full object-cover text-center'></img>
+                    photos.map((photo, idx) => (
+                        <img src={photo.img} alt={photo.desc} className='w-full h-full object-cover text-center' key={idx}></img>
                     ))
                 }
             </div>
