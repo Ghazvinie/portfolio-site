@@ -37,14 +37,14 @@ export default function DropNav() {
                         <div className='flex flex-row w-min'>
                             <CgClose style={{ width: 50, height: 50 }} onClick={() => setIsOpen(!isOpen)} className='cursor-pointer' />
                             {
-                                scroll > 500 && <IoIosArrowUp style={{ height: 40, width: 40 }} className='cursor-pointer place-self-center ml-2' onClick={() => animateScroll.scrollToTop()} />
+                                scroll > 600 && <IoIosArrowUp style={{ height: 40, width: 40 }} className='cursor-pointer place-self-center ml-2' onClick={() => animateScroll.scrollToTop()} />
                             }
                         </div>
                         :
                         <div className='flex flex-row'>
                             <RiMenuLine style={{ width: 50, height: 50 }} className='cursor-pointer' onClick={() => setIsOpen(!isOpen)} />
                             {
-                                scroll > 500 && <IoIosArrowUp style={{ height: 40, width: 40 }} className='cursor-pointer place-self-center ml-2' onClick={() => animateScroll.scrollToTop()} />
+                                scroll > 600 && <IoIosArrowUp style={{ height: 40, width: 40 }} className='cursor-pointer place-self-center ml-2' onClick={() => animateScroll.scrollToTop()} />
                             }
                         </div>
                 }

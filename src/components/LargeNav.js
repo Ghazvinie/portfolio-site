@@ -20,11 +20,11 @@ export default function LargeNav() {
     const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer font-medium text-4xl border-black border-solid border-b-4 border-opacity-0 hover:border-opacity-100';
     const linkActive = 'underline bg-black text-white rounded-sm';
     const iconStyle = 'border-black border-b-2 border-opacity-0 hover:border-opacity-100 mx-1';
-    const iconSize = { height: 30, width: 30 };
+    const iconSize = { height: 33, width: 33 };
 
     return (
         <div className='flex flex-row justify-between'>
-            <nav className='flex flex-wrap mb-1'>
+            <nav className='flex flex-row flex-wrap mb-1'>
                 <Link
                     className={linkStyle}
                     activeClass={linkActive}
@@ -65,16 +65,23 @@ export default function LargeNav() {
                     duration={500}>
                     Contact
                 </Link>
-                {
-                    scroll > 400 &&
-                    <div className='flex flex-col justify-center cursor-pointer ml-4' onClick={() => animateScroll.scrollToTop()}>
+                <Link
+                    className={linkStyle}
+                    activeClass={linkActive}
+                        to='photos'
+                        spy={true}
+                        smooth={true}
+                        offset={offSet}
+                        duration={500}>
+                        Photos
+                    </Link>
 
-                        <IoIosArrowUp style={{ height: 40, width: 40 }} />
-                    </div>
-                }
             </nav>
-            <div className='flex flex-col mt-3'>
-                <div className='flex flex-row items-center justify-center'>
+            <div className='flex flex-row self-center'>
+            {
+                    scroll > 800 &&
+                        <IoIosArrowUp style={{ height: 35, width: 35 }} className='cursor-pointer' onClick={() => animateScroll.scrollToTop()} />
+                }
                     <a href='https://github.com/Ghazvinie' className={iconStyle} target='_blank' rel='noreferrer'>
                         <VscGithubInverted
                             style={iconSize}
@@ -90,19 +97,7 @@ export default function LargeNav() {
                             style={iconSize}
                             title='Email' />
                     </a>
-                </div>
-                <div className='text-center m-1'>
-                    <Link
-                        className='font-medium text-md text-center text-white hover:text-black cursor-pointer p-1'
-                        activeClass='bg-black underline'
-                        to='photos'
-                        spy={true}
-                        smooth={true}
-                        offset={offSet}
-                        duration={500}>
-                        Bonus Photos
-                    </Link>
-                </div>
+
             </div>
         </div>
     )

@@ -18,7 +18,7 @@ export default function Nav() {
 
     return (
         <header className='bg-white p-2 border-b-4 border-black' >
-            {width <= 768 ? <DropNav /> : <LargeNav />}
+            {width <= 945 ? <DropNav /> : <LargeNav />}
         </header>
     );
 }
