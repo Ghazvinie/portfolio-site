@@ -14,7 +14,7 @@ export default function About() {
                     <br />
                     I am a bespoke tailor turned passionate full-stack developer.
                     <br />
-                    I have always been interested in and excited by computers and love now being able to even more with them.
+                    I love to code and work with computers!
                     <br />
                     I have experience developing projects for a small start-up, as well as working on production code issues.
                     <br />
