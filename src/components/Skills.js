@@ -14,21 +14,18 @@ export default function Skills() {
                 <p className='md:mr-8 flex text-2xl  font-semibold'>
                     {categoryName}:
                 </p>
-                <div className='flex flex-row flex-wrap justify-center items-center w-100'>
-                    {keys.map(key => {
-                        const Icon = skill[key].icon
-                        return (
-                            <div className='flex flex-col items-center mx-2 md:mx-5 my-4'>
-                                <Icon style={{ height: 60, width: 60 }} />
-                                <p className='m-2 font-semibold  text-md md:text-xl b-black pb-1 text-center' >
-                                    {skill[key].name}
-                                </p>
-                            </div>
-                        )
-                    }
-                    )}
-                </div>
+                {keys.map(key => {
+                    const Icon = skill[key].icon
+                    return (
+                        <div className='flex flex-col items-center mx-2 md:mx-5 my-4'>
+                            <Icon style={{ height: 60, width: 60 }} />
+                            <p className='m-2 font-semibold  text-md md:text-xl b-black pb-1 text-center' >
+                                {skill[key].name}
+                            </p>
+                        </div>
+                    )})}
             </div>
+
         );
     })
 
