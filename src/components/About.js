@@ -12,11 +12,11 @@ export default function About() {
                 <div className='text-1xl md:text-3xl md:leading-loose leading-loose text-start mb-10 mt-4 md:mt-0'>
                     Hello again.
                     <br />
-                    I am a bespoke tailor turned passionate developer.
+                    I am a bespoke tailor turned passionate full-stack developer.
                     <br />
-                    I love to code and work with computers!
+                    I have always been interested in and excited by computers and love now being able to even more with them.
                     <br />
-                    I have experience creating real world projects and working on real-world codebases.
+                    I have experience developing projects for a small start-up, as well as working on production code issues.
                     <br />
                     Please scroll down to view my projects and skills...
                     <br />
@@ -25,8 +25,6 @@ export default function About() {
                     <FlashingArrows />
                 </div>
             </div>
-
-            <p className='ml-18 md:ml-36 text-base font-extralight'>(Yes, the website is black and white)</p>
         </div>
     );
 }
