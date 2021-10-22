@@ -18,6 +18,7 @@ export default function Photos() {
                     ))
                 }
             </div>
+            <p className='font-thin self-end pt-10'>Copyright Daniel Ghazvinie</p>
         </div>
     );
 }
