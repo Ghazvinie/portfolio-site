@@ -19,7 +19,7 @@ export default function Projects() {
                             <h1 className='text-center text-lg font-bold break-word my-4'>
                                 {project.title}
                             </h1>
-                            <p className='break-word text-justify text-medium font-light my-3 text-center w-11/12'>
+                            <p className='break-word text-justify text-medium font-light my-3 text-center w-9/12'>
                                 {project.description}
                             </p>
                             <div className='flex flex-row justify-center my-2'>
