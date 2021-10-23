@@ -10,7 +10,7 @@ export default function Skills() {
                     : keys.includes('bash') ? 'WIP' : '';
 
         return (
-            <div className='flex flex-row flex-wrap items-center justify-center my-5' >
+            <div className='flex flex-row flex-wrap items-center justify-center my-10' >
                 <p className='md:mr-8 flex text-2xl  font-semibold'>
                     {categoryName}:
                 </p>
