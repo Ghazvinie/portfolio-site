@@ -18,12 +18,9 @@ export default function Contact() {
 
     return (
         <div
-            className={`border-black border-t-4 flex flex-col flex-wrap m-2 p-2 mb-20 ${width <= 640 && 'h-screen'}`}
+            className={`border-black border-t-4 flex flex-col flex-wrap p-2 mb-20 ${width <= 640 && 'h-screen'}`}
             name='contact'>
-            <h1 className='text-4xl font-semibold' >Contact</h1>
-            {/* <p className=' ml-18 md:ml-36 text-1xl md:text-3xl md:leading-loose leading-loose md:text-center mt-4' >
-                If you would like to contact me regarding any employment opportunities, please do so through:
-            </p> */}
+            <h1 className='text-4xl font-semibold ml-2 mt-2' >Contact</h1>
             <div className='ml-18 md:ml-36 justify-center items-center flex flex-col md:h-screen'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:-mt-96 justify-center items-center'>
                     <a href="mailto:danielghazvinie@protonmail.com" rel='noreferrer' target='_blank'>

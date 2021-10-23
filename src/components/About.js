@@ -4,10 +4,10 @@ import FlashingArrows from './FlashingArrows';
 export default function About() {
     return (
         <div
-            className='border-black border-t-4 flex justify-center flex-col flex-wrap m-2 p-2'
+            className='border-black border-t-4 flex justify-center flex-col flex-wrap p-2'
             name='about'
         >
-            <h1 className='text-4xl font-semibold'>About</h1>
+            <h1 className='text-4xl font-semibold ml-2 mt-2'>About</h1>
             <div className='ml-18 md:ml-36 justify-center md:h-screen'>
                 <div className='text-1xl md:text-3xl md:leading-loose leading-loose text-start mb-10 mt-4 md:mt-0'>
                     Hello again.

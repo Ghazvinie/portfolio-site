@@ -2,15 +2,14 @@ import React from 'react';
 import projects from '../data/projects';
 import { FaGithubSquare } from 'react-icons/fa';
 import { BiLinkExternal } from 'react-icons/bi';
-import { IoMdHeartEmpty } from 'react-icons/io';
 
 export default function Projects() {
     return (
         <div
-            className='flex flex-col border-black border-t-4 m-2 p-2 mb-10 '
+            className='flex flex-col border-black border-t-4 p-2 mb-10 '
             name='projects'
         >
-            <h1 className='text-4xl font-semibold mb-10'>Projects</h1>
+            <h1 className='text-4xl font-semibold mb-10 ml-2 mt-2'>Projects</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 ml-18 md:ml-36 justify-items-center items-center' >
                 {
                     projects.map((project,idx) => (
