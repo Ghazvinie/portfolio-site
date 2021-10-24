@@ -6,6 +6,7 @@ import jwt from '../assets/projectPics/jwt.png';
 import mongoCrud from '../assets/projectPics/mongoCrud.png';
 import conway from '../assets/projectPics/conway.png';
 import payment from '../assets/projectPics/payment.png';
+import site from '../assets/projectPics/site.png';
 import missing from '../assets/projectPics/missing.jpg';
 
 import {
@@ -17,7 +18,8 @@ import {
     SiJavascript,
     SiReact,
     SiRedux,
-    SiJsonwebtokens
+    SiJsonwebtokens,
+    SiDocker
 } from 'react-icons/si';
 import { ReactComponent as expressjsIcon } from '../assets/icons/expressjs.svg';
 import { ReactComponent as oauthIcon } from '../assets/icons/oauthIcon.svg';
@@ -39,6 +41,13 @@ const projects = [
         github: 'https://github.com/Ghazvinie/rss_validator',
         live: 'https://speechkit-rss-validator.herokuapp.com/',
         img: rss || missing
+    },
+    {
+        title: 'Portfolio Site',
+        description: 'Yes, this site you\'re on! No live link as you\'re already viewing it. Built with ReactJs, Dockerized and then served on Amazon Web Services EC2 instance.',
+        stack: [{ icon: SiHtml5, text: 'HTML' }, { icon: SiCss3, text: 'CSS' }, { icon: SiJavascript, text: 'JavaScript' }, { icon: SiReact, text: 'ReactJS' }, {icon: SiTailwindcss, text: 'Tailwind CSS'}, { icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, {icon: SiDocker, text: 'Docker' } ],
+        github: 'https://github.com/Ghazvinie/rss_validator',
+        img: site || missing
     },
     {
         title: 'Express Error Handler',
