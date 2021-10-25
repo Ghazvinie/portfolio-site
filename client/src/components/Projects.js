@@ -21,9 +21,9 @@ export default function Projects() {
                             <p className='break-word text-justify text-medium font-light my-3 text-center w-9/12'>
                                 {project.description}
                             </p>
-                            <div className='flex flex-row justify-center my-2'>
+                            <div className='flex flex-row flex-wrap justify-center my-2 w-9/12'>
                                 {
-                                    project.stack?.map(tech => <tech.icon style={{ width: 25, height: 25 }} className='mx-2' title={tech.text}/>)
+                                    project.stack?.map(tech => <tech.icon style={{ width: 25, height: 25 }} className='m-2' title={tech.text}/>)
                                 }
                             </div>
                             <div className='flex items-center justify-center flex-row my-4'>

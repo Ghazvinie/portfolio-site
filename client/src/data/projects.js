@@ -44,7 +44,7 @@ const projects = [
     },
     {
         title: 'Portfolio Site',
-        description: 'Yes, this site you\'re on! No live link as you\'re already viewing it. Built with ReactJs, Dockerized and then served on Amazon Web Services EC2 instance.',
+        description: 'Yes, this site you\'re on! No live link as you\'re already viewing it. Built with ReactJs, Dockerized and then deployed on Amazon Web Services EC2 instance.',
         stack: [{ icon: SiHtml5, text: 'HTML' }, { icon: SiCss3, text: 'CSS' }, { icon: SiJavascript, text: 'JavaScript' }, { icon: SiReact, text: 'ReactJS' }, {icon: SiTailwindcss, text: 'Tailwind CSS'}, { icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }, {icon: SiDocker, text: 'Docker' } ],
         github: 'https://github.com/Ghazvinie/rss_validator',
         img: site || missing
