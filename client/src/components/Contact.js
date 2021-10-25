@@ -29,7 +29,7 @@ export default function Contact() {
                             <AiOutlineMail className={iconSize} />
                         </div>
                     </a>
-                    <a href='https://www.linkedin.com/in/daniel-ghazvinie-53a304188/' rel='noreferrer' target='_blank'>
+                    <a href='https://www.linkedin.com/in/daniel-ghazvinie' rel='noreferrer' target='_blank'>
                         <div className={iconDiv}>
                             <p className={title}>LinkedIn</p>
                             <SiLinkedin className='h-32 w-28' />

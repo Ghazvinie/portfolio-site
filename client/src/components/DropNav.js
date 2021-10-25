@@ -110,7 +110,7 @@ export default function DropNav() {
                         style={iconSize}
                         title='GitHub' />
                 </a>
-                <a href='https://www.linkedin.com/in/daniel-ghazvinie-53a304188/' className={iconStyle} target='_blank' rel='noreferrer'>
+                <a href='https://www.linkedin.com/in/daniel-ghazvinie' className={iconStyle} target='_blank' rel='noreferrer'>
                     <AiFillLinkedin
                         style={iconSize}
                         title='LinkedIn' />
