@@ -18,11 +18,12 @@ const messages  = [
     'JavaScript',
     'React',
     'Redux',
-    'NodeJs',
-    'ExpressJs',
+    'Node.js',
+    'Express.js',
     'Git / GitHub',
     'MongoDB',
     'Restful APIs',
+    'Docker',
     'Authorisation / Authentication',
     'NPM / Yarn'
 ]
