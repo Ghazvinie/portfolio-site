@@ -8,9 +8,9 @@ This site was containerised with Docker and then deployed on an AWS EC2 instance
 
 ### Technologies Used:
 * HTML / CSS / JavaScript
-* ReactJS 17.0.2
+* React.js 17.0.2
 * Tailwind CSS 6.3.0
-* Node 14.18.1 / Express 4.17.1
+* Node.js 14.18.1 / Express 4.17.1
 * Docker 20.10.8
 
 ### The app can be viewed live [here](http://www.danielghazvinie.com/).
