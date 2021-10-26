@@ -16,8 +16,8 @@ export default function FlashingArrows() {
     useEffect(() => {
         index > arrows.length - 1 && setIndex(0);
         const move = (from, to) => {
-            var temp = arrows.splice(from, 1)[0]
-            arrows.splice(to, 0, temp)
+            const temp = arrows.splice(from, 1)[0];
+            arrows.splice(to, 0, temp);
         };
 
         const timer = setInterval(() => {
@@ -25,7 +25,7 @@ export default function FlashingArrows() {
                 move(index, 0);
                 setIndex(0);
                 return;
-            }
+            };
             move(index, index + 1);
             setIndex((prevIndex) => prevIndex + 1);
         }, 80);

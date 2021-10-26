@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import FlashingArrows from './FlashingArrows';
 
 export default function About() {
+
+
+
     return (
         <div
             className='border-black border-t-4 flex justify-center flex-col flex-wrap p-2'
@@ -21,7 +24,7 @@ export default function About() {
                     Please scroll down to view my projects and skills...
                     <br />
                 </div>
-                <div className='text-3xl md:text-5xl flex flex-col w-min mb-10'>
+                <div className='text-3xl md:text-5xl flex flex-col w-min mb-10 min-h-full'>
                     <FlashingArrows />
                 </div>
             </div>
