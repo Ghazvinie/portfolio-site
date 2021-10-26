@@ -15,7 +15,7 @@ export default function Projects() {
                     projects.map((project,idx) => (
                         <div className='grid auto-rows-min justify-items-center bg-gray-50 p-4 h-full ' key={idx}>
                             <img src={project.img} className='w-9/12 h-80 object-scale-down text-center mb-3' alt={project.title} />
-                            <h1 className='text-center text-lg font-bold break-word my-4'>
+                            <h1 className='text-center text-lg font-bold break-word my-4  w-9/12'>
                                 {project.title}
                             </h1>
                             <p className='break-word text-justify text-medium font-light my-3 text-center w-9/12'>

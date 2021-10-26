@@ -16,9 +16,9 @@ export default function DropNav() {
     const [scroll, setScroll] = useState(window.scrollY);
 
     const offSet = -355
-    const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer text-justify border-black border-solid border-b-2 border-opacity-0 hover:border-opacity-100 w-min';
+    const linkStyle = 'nav-item inline-flex items-center py-3 px-3 mr-4 cursor-pointer text-justify  w-min';
     const linkActive = 'underline bg-black text-white rounded-sm';
-    const iconStyle = 'border-black border-b-2 border-opacity-0 hover:border-opacity-100 mx-1 max-h-9';
+    const iconStyle = 'mx-1 max-h-9';
     const iconSize = { height: 28, width: 28 };
 
     const updateScroll = () => {
