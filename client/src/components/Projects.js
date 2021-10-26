@@ -10,10 +10,10 @@ export default function Projects() {
             name='projects'
         >
             <h1 className='text-4xl font-semibold mb-10 ml-2 mt-2'>Projects</h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 ml-18 md:ml-36 justify-items-center items-center' >
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 m-2 md:ml-36 justify-items-center items-center' >
                 {
                     projects.map((project,idx) => (
-                        <div className='grid auto-rows-min justify-items-center ml-2 bg-gray-50 p-4 h-full ' key={idx}>
+                        <div className='grid auto-rows-min justify-items-center bg-gray-50 p-4 h-full ' key={idx}>
                             <img src={project.img} className='w-9/12 h-80 object-scale-down text-center mb-3' alt={project.title} />
                             <h1 className='text-center text-lg font-bold break-word my-4'>
                                 {project.title}

@@ -32,7 +32,7 @@ export default function Contact() {
                     <a href='https://www.linkedin.com/in/daniel-ghazvinie' rel='noreferrer' target='_blank'>
                         <div className={iconDiv}>
                             <p className={title}>LinkedIn</p>
-                            <SiLinkedin className='h-32 w-28' />
+                            <SiLinkedin className='h-14 w-14 md:h-32 md:w-28' />
                         </div>
                     </a>
                 </div>

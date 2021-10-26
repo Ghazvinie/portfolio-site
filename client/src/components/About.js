@@ -11,8 +11,8 @@ export default function About() {
             name='about'
         >
             <h1 className='text-4xl font-semibold ml-2 mt-2'>About</h1>
-            <div className='ml-18 md:ml-36 justify-center md:h-screen'>
-                <div className='text-1xl md:text-3xl md:leading-loose leading-loose text-start mb-10 mt-4 md:mt-0'>
+            <div className='ml-2 md:ml-36 justify-center md:h-screen'>
+                <div className='text-1xl md:text-3xl leading-10 md:leading-loose text-start mb-10 mt-4 md:mt-0'>
                     Hello again.
                     <br />
                     I am a bespoke tailor turned passionate full-stack developer.
