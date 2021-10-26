@@ -28,7 +28,7 @@ export default function FlashingArrows() {
             };
             move(index, index + 1);
             setIndex((prevIndex) => prevIndex + 1);
-        }, 80);
+        }, 100);
         return () => clearInterval(timer);
     });
 
