@@ -16,7 +16,8 @@ import {
     SiPostman,
     SiGraphql,
     SiGit,
-    SiDocker
+    SiDocker,
+    SiAmazonaws
 } from 'react-icons/si';
 import { ReactComponent as expressjsIcon } from '../assets/icons/expressjs.svg'
 import { ReactComponent as restIcon } from '../assets/icons/api.svg'
@@ -70,6 +71,10 @@ const skills = [{
         name: 'Rest APIs',
         icon: restIcon
     },
+    graphql: {
+        name: 'GraphQL',
+        icon: SiGraphql
+    },
     docker: {
         name: 'Docker',
         icon: SiDocker
@@ -112,9 +117,9 @@ const skills = [{
         name: 'PostgreSQL',
         icon: SiPostgresql
     },
-    graphql: {
-        name: 'GraphQL',
-        icon: SiGraphql
+    aws : {
+        name : 'AWS',
+        icon: SiAmazonaws
     }
 
 }

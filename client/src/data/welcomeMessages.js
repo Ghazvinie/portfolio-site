@@ -23,6 +23,7 @@ const messages  = [
     'Git / GitHub',
     'MongoDB',
     'Restful APIs',
+    'GraphQL',
     'Docker',
     'Authorisation / Authentication',
     'NPM / Yarn'
