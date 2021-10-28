@@ -24,7 +24,7 @@ export default function About() {
                     Please scroll down to view my projects and skills...
                     <br />
                 </div>
-                <div className='text-3xl md:text-5xl flex flex-col w-min h-72 md:h-3/5 justify-between'>
+                <div className='text-3xl md:text-5xl flex flex-col w-min h-72 md:h-3/5 justify-between arrow'>
                     <FlashingArrows />
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
-// import './flashingArrows.css';
+import './flashingArrows.css';
 
 export default function FlashingArrows() {
     // const [index, setIndex] = useState(0);
@@ -31,9 +31,9 @@ export default function FlashingArrows() {
 
     return (
         <>
-  <IoIosArrowDown className='animate-pulse block' />
-  <IoIosArrowDown className='animate-pulse' />
-  <IoIosArrowDown className='animate-pulse' />
+  <IoIosArrowDown />
+  <IoIosArrowDown />
+  <IoIosArrowDown />
         </>
     );
 }
