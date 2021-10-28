@@ -17,7 +17,8 @@ import {
     SiGraphql,
     SiGit,
     SiDocker,
-    SiAmazonaws
+    SiAmazonaws,
+    SiNginx
 } from 'react-icons/si';
 import { ReactComponent as expressjsIcon } from '../assets/icons/expressjs.svg'
 import { ReactComponent as restIcon } from '../assets/icons/api.svg'
@@ -120,6 +121,10 @@ const skills = [{
     aws : {
         name : 'AWS',
         icon: SiAmazonaws
+    },
+    nginx : {
+        name: 'Nginx',
+        icon: SiNginx
     }
 
 }
