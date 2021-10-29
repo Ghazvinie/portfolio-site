@@ -27,7 +27,7 @@ import { ReactComponent as passportIcon } from '../assets/icons/passport.svg';
 
 const projects = [
     {
-        title: 'Custom Audio Player',
+        title: 'SpeechKit Custom Audio Player',
         description: 'Work experience project - developed a custom audio player based on SpeechKit\'s PlayserSDK along with a guide on how this can be done.',
         stack: [{ icon: SiHtml5, text: 'HTML' }, { icon: SiCss3, text: 'CSS' }, { icon: SiJavascript, text: 'JavaScript' }, { icon: SiReact, text: 'ReactJS' }],
         github: 'https://github.com/Ghazvinie/custom-speechkit-audio-player',
@@ -35,7 +35,7 @@ const projects = [
         img: player || missing
     },
     {
-        title: 'RSS Validator',
+        title: 'SpeecKit RSS Validator',
         description: 'Work experience project - this involved creating an RSS feed validator for clients to check their feeds are formatted correctly and include all necessary data.',
         stack: [{ icon: SiHtml5, text: 'HTML' }, { icon: SiCss3, text: 'CSS' }, { icon: SiJavascript, text: 'JavaScript' }, { icon: SiReact, text: 'ReactJS' }, { icon: SiNodeDotJs, text: 'NodeJs' }, { icon: expressjsIcon, text: 'ExpressJs' }],
         github: 'https://github.com/Ghazvinie/rss_validator',
