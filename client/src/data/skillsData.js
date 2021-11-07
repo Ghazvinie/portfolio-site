@@ -45,6 +45,11 @@ const skills = [{
         name: 'Redux',
         icon: SiRedux,
     },
+
+    typescript: {
+        name: 'TypeScript',
+        icon: SiTypescript,
+    },
     tailwind: {
         name: 'TailwindCSS',
         icon: SiTailwindcss,
@@ -63,6 +68,11 @@ const skills = [{
     javascript: {
         name: 'JavaScript',
         icon: SiJavascript,
+    },
+
+    typescript: {
+        name: 'TypeScript',
+        icon: SiTypescript,
     },
     mongodb: {
         name: 'MongoDB',
@@ -105,10 +115,6 @@ const skills = [{
 },
 {
 
-    typescript: {
-        name: 'TypeScript',
-        icon: SiTypescript,
-    },
 
     bash: {
         name: 'Bash',
