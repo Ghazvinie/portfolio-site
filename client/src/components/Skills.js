@@ -2,7 +2,8 @@ import React from 'react';
 import skills from '../data/skillsData';
 
 export default function Skills() {
-    const iconSize = 'h-10 w-10 md:h-16 md:w-16'
+    const iconSize = 'h-10 w-10 md:h-14 md:w-14';
+
     const skillsDisplay = skills.map(skill => {
         const keys = Object.keys(skill)
         const categoryName = keys.includes('react') ? 'Frontend'

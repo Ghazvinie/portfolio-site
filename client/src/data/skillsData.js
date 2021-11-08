@@ -37,6 +37,10 @@ const skills = [{
         name: 'JavaScript',
         icon: SiJavascript,
     },
+    typescript: {
+        name: 'TypeScript',
+        icon: SiTypescript,
+    },
     react: {
         name: 'React',
         icon: SiReact,
@@ -44,11 +48,6 @@ const skills = [{
     redux: {
         name: 'Redux',
         icon: SiRedux,
-    },
-
-    typescript: {
-        name: 'TypeScript',
-        icon: SiTypescript,
     },
     tailwind: {
         name: 'TailwindCSS',
@@ -58,18 +57,17 @@ const skills = [{
 {
 
     node: {
-        name: 'NodeJs',
+        name: 'Node.js',
         icon: SiNodeDotJs,
     },
     express: {
-        name: 'ExpressJs',
+        name: 'Express.js',
         icon: expressjsIcon,
     },
     javascript: {
         name: 'JavaScript',
         icon: SiJavascript,
     },
-
     typescript: {
         name: 'TypeScript',
         icon: SiTypescript,
@@ -124,11 +122,11 @@ const skills = [{
         name: 'PostgreSQL',
         icon: SiPostgresql
     },
-    aws : {
-        name : 'AWS',
+    aws: {
+        name: 'AWS',
         icon: SiAmazonaws
     },
-    nginx : {
+    nginx: {
         name: 'Nginx',
         icon: SiNginx
     }
