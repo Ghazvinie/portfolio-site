@@ -18,7 +18,9 @@ import {
     SiGit,
     SiDocker,
     SiAmazonaws,
-    SiNginx
+    SiNginx,
+    SiMysql,
+    SiPhp
 } from 'react-icons/si';
 import { ReactComponent as expressjsIcon } from '../assets/icons/expressjs.svg'
 import { ReactComponent as restIcon } from '../assets/icons/api.svg'
@@ -114,23 +116,18 @@ const skills = [{
 {
 
 
-    bash: {
-        name: 'Bash',
-        icon: SiGnubash,
-    },
-    postgresql: {
-        name: 'PostgreSQL',
-        icon: SiPostgresql
-    },
     aws: {
         name: 'AWS',
         icon: SiAmazonaws
     },
-    nginx: {
-        name: 'Nginx',
-        icon: SiNginx
+    mysql: {
+        name: 'MySQL',
+        icon: SiMysql
+    },
+    php: {
+        name: 'PHP',
+        icon: SiPhp
     }
-
 }
 ];
 
